@@ -1,0 +1,32 @@
+2019-02-13 10:41:56 -03 FATAL:  password authentication failed for user "postgres"
+2019-02-13 10:41:56 -03 DETAIL:  Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2019-02-13 11:05:50 -03 ERROR:  relation "usuarios_pkey" already exists
+2019-02-13 11:05:50 -03 STATEMENT:  CREATE TABLE public.usu
+	(
+	  usu_cod serial NOT NULL,
+	  usu_nome character varying(30),
+	  usu_senha character varying(15),
+	  usu_tipo character varying(30),
+	  CONSTRAINT usuarios_pkey PRIMARY KEY (usu_cod)
+	)
+	WITH (
+	  OIDS=FALSE
+	);
+	ALTER TABLE public.usu
+	  OWNER TO postgres;
+	
+2019-02-13 11:06:30 -03 ERROR:  relation "usu" already exists
+2019-02-13 11:06:30 -03 STATEMENT:  CREATE TABLE public.usu
+	(
+	  usu_cod serial NOT NULL,
+	  usu_nome character varying(30),
+	  usu_senha character varying(15),
+	  usu_tipo character varying(30),
+	  CONSTRAINT usu_pkey PRIMARY KEY (usu_cod)
+	)
+	WITH (
+	  OIDS=FALSE
+	);
+	ALTER TABLE public.usu
+	  OWNER TO postgres;
+	

@@ -1,0 +1,11 @@
+2019-05-07 08:10:28 -03 LOG:  could not receive data from client: unrecognized winsock error 10053
+2019-05-07 08:10:28 -03 LOG:  database system was shut down at 2019-05-06 11:59:20 -03
+2019-05-07 08:10:29 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-05-07 08:10:29 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-05-07 08:10:29 -03 LOG:  autovacuum launcher started
+2019-05-07 08:29:41 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-05-07 12:08:59 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-05-07 12:09:00 -03 LOG:  interrompendo quaisquer transações ativas
+2019-05-07 12:09:01 -03 LOG:  autovacuum launcher shutting down
+2019-05-07 12:09:06 -03 LOG:  shutting down
+2019-05-07 12:09:19 -03 LOG:  database system is shut down

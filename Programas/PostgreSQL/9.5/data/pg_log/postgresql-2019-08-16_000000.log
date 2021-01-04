@@ -1,0 +1,4 @@
+2019-08-16 10:19:23 -03 ERROR:  relation "aluno" does not exist at character 9
+2019-08-16 10:19:23 -03 STATEMENT:  UPDATE  aluno 
+	SET nome_aluno= 'math'  
+	WHERE id_aluno= 7;

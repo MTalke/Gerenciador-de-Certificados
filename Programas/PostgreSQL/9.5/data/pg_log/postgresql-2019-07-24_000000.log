@@ -1,0 +1,6 @@
+2019-07-24 18:15:55 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-07-24 22:18:40 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-07-24 22:18:41 -03 LOG:  interrompendo quaisquer transações ativas
+2019-07-24 22:18:42 -03 LOG:  autovacuum launcher shutting down
+2019-07-24 22:18:47 -03 LOG:  shutting down
+2019-07-24 22:19:04 -03 LOG:  database system is shut down

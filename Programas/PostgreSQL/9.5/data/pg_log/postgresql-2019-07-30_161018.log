@@ -1,0 +1,298 @@
+2019-07-30 16:10:18 -03 FATAL:  the database system is starting up
+2019-07-30 16:10:18 -03 LOG:  database system was shut down at 2019-07-30 12:07:14 -03
+2019-07-30 16:10:18 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-07-30 16:10:18 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-07-30 16:10:18 -03 LOG:  autovacuum launcher started
+2019-07-30 18:03:36 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:03:37 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:05:54 -03 ERROR:  syntax error at or near "from" at character 13
+2019-07-30 18:05:54 -03 STATEMENT:  insert into from projeto projeto (id_projeto,nome) values (2010,'caximbo')
+2019-07-30 18:06:19 -03 ERROR:  syntax error at or near "projeto" at character 21
+2019-07-30 18:06:19 -03 STATEMENT:  insert into projeto projeto (id_projeto,nome) values (2010,'caximbo')
+2019-07-30 18:10:16 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:26:28 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:32:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:32:50 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:34:30 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 18:37:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 20:03:14 -03 ERROR:  column "nextval" does not exist
+2019-07-30 20:03:14 -03 STATEMENT:  ALTER TABLE public.projeto
+	  ADD COLUMN id integer NOT NULL DEFAULT nextval;
+	ALTER TABLE public.projeto
+	  ALTER COLUMN id 
+	SET (n_distinct=DEFAULT);
+	
+2019-07-30 20:15:38 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 20:15:38 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto column id_projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 20:15:38 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:15:38 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP COLUMN id_projeto;
+	ALTER TABLE public.projeto
+	  ADD COLUMN id_projeto serial;
+	
+2019-07-30 20:15:58 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 20:15:58 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto column id_projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 20:15:58 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:15:58 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP COLUMN id_projeto;
+	ALTER TABLE public.projeto
+	  ADD COLUMN id_projeto serial;
+	
+2019-07-30 20:17:26 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 20:17:26 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto column id_projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 20:17:26 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:17:26 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP COLUMN id_projeto;
+	ALTER TABLE public.projeto
+	  ADD COLUMN id_projeto serial NOT NULL;
+	
+2019-07-30 20:21:29 -03 ERROR:  column "ident" contains null values
+2019-07-30 20:21:29 -03 STATEMENT:  ALTER TABLE public.projeto
+	  ADD COLUMN ident integer NOT NULL;
+	ALTER TABLE public.projeto
+	  ALTER COLUMN ident 
+	SET (n_distinct=DEFAULT);
+	
+2019-07-30 20:21:35 -03 ERROR:  column "ident" contains null values
+2019-07-30 20:21:35 -03 STATEMENT:  ALTER TABLE public.projeto
+	  ADD COLUMN ident integer NOT NULL;
+	ALTER TABLE public.projeto
+	  ALTER COLUMN ident 
+	SET (n_distinct=DEFAULT);
+	
+2019-07-30 20:26:09 -03 ERROR:  cannot drop constraint projeto_pkey on table projeto because other objects depend on it
+2019-07-30 20:26:09 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on index projeto_pkey
+	constraint situacao_id_projeto_fkey on table situacao depends on index projeto_pkey
+2019-07-30 20:26:09 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:26:09 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP CONSTRAINT projeto_pkey;
+	ALTER TABLE public.projeto
+	  ADD PRIMARY KEY (ident);
+	
+2019-07-30 20:26:36 -03 ERROR:  cannot drop constraint projeto_pkey on table projeto because other objects depend on it
+2019-07-30 20:26:36 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on index projeto_pkey
+	constraint situacao_id_projeto_fkey on table situacao depends on index projeto_pkey
+2019-07-30 20:26:36 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:26:36 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP CONSTRAINT projeto_pkey;
+	ALTER TABLE public.projeto
+	  ADD CONSTRAINT ident PRIMARY KEY (ident);
+	
+2019-07-30 20:27:09 -03 ERROR:  cannot drop constraint projeto_pkey on table projeto because other objects depend on it
+2019-07-30 20:27:09 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on index projeto_pkey
+	constraint situacao_id_projeto_fkey on table situacao depends on index projeto_pkey
+2019-07-30 20:27:09 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:27:09 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP CONSTRAINT projeto_pkey;
+	ALTER TABLE public.projeto
+	  ADD PRIMARY KEY (id_projeto);
+	
+2019-07-30 20:28:15 -03 ERROR:  cannot drop constraint projeto_pkey on table projeto because other objects depend on it
+2019-07-30 20:28:15 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on index projeto_pkey
+	constraint situacao_id_projeto_fkey on table situacao depends on index projeto_pkey
+2019-07-30 20:28:15 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:28:15 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP CONSTRAINT projeto_pkey;
+	ALTER TABLE public.projeto
+	  ADD CONSTRAINT ident PRIMARY KEY (ident);
+	
+2019-07-30 20:31:53 -03 ERROR:  cannot drop table projeto because other objects depend on it
+2019-07-30 20:31:53 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto
+2019-07-30 20:31:53 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:31:53 -03 STATEMENT:  DROP TABLE public.projeto
+2019-07-30 20:32:09 -03 ERROR:  cannot drop table projeto because other objects depend on it
+2019-07-30 20:32:09 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto
+2019-07-30 20:32:09 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:32:09 -03 STATEMENT:  DROP TABLE public.projeto
+2019-07-30 20:34:01 -03 ERROR:  syntax error at or near "from" at character 6
+2019-07-30 20:34:01 -03 STATEMENT:  drop from table aluno
+2019-07-30 20:34:07 -03 ERROR:  cannot drop table aluno because other objects depend on it
+2019-07-30 20:34:07 -03 DETAIL:  constraint alunoCordenador_id_aluno_fkey on table orientacao depends on table aluno
+2019-07-30 20:34:07 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:34:07 -03 STATEMENT:  drop table aluno
+2019-07-30 20:34:19 -03 ERROR:  cannot drop table projeto because other objects depend on it
+2019-07-30 20:34:19 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto
+2019-07-30 20:34:19 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 20:34:19 -03 STATEMENT:  drop table projeto
+2019-07-30 21:03:12 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 21:03:12 -03 DETAIL:  constraint cordenador_id_projeto_fkey on table cordenador depends on table projeto column id_projeto
+	constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 21:03:12 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 21:03:12 -03 STATEMENT:  ALTER TABLE public.projeto DROP COLUMN id_projeto
+2019-07-30 21:04:25 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 21:04:25 -03 DETAIL:  constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 21:04:25 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 21:04:25 -03 STATEMENT:  ALTER TABLE public.projeto DROP COLUMN id_projeto
+2019-07-30 21:04:56 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 21:04:56 -03 DETAIL:  constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 21:04:56 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 21:04:56 -03 STATEMENT:  ALTER TABLE public.projeto DROP COLUMN id_projeto
+2019-07-30 21:06:00 -03 ERROR:  cannot drop constraint projeto_pkey on table projeto because other objects depend on it
+2019-07-30 21:06:00 -03 DETAIL:  constraint situacao_id_projeto_fkey on table situacao depends on index projeto_pkey
+2019-07-30 21:06:00 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 21:06:00 -03 STATEMENT:  ALTER TABLE public.projeto DROP CONSTRAINT projeto_pkey
+2019-07-30 21:06:25 -03 ERROR:  cannot drop constraint projeto_pkey on table projeto because other objects depend on it
+2019-07-30 21:06:25 -03 DETAIL:  constraint situacao_id_projeto_fkey on table situacao depends on index projeto_pkey
+2019-07-30 21:06:25 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 21:06:25 -03 STATEMENT:  ALTER TABLE public.projeto
+	  DROP CONSTRAINT projeto_pkey;
+	
+2019-07-30 21:06:39 -03 ERROR:  cannot drop table projeto column id_projeto because other objects depend on it
+2019-07-30 21:06:39 -03 DETAIL:  constraint situacao_id_projeto_fkey on table situacao depends on table projeto column id_projeto
+2019-07-30 21:06:39 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-30 21:06:39 -03 STATEMENT:  ALTER TABLE public.projeto DROP COLUMN id_projeto
+2019-07-30 21:51:20 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-30 21:51:20 -03 DETAIL:  Key (id_projeto)=(1) is not present in table "projeto".
+2019-07-30 21:51:20 -03 STATEMENT:  ALTER TABLE public.situacao
+	  ADD COLUMN id_projeto serial;
+	ALTER TABLE public.situacao
+	  ADD COLUMN id_situacao serial NOT NULL;
+	ALTER TABLE public.situacao
+	  ADD PRIMARY KEY (id_situacao);
+	ALTER TABLE public.situacao
+	  ADD FOREIGN KEY (id_projeto) REFERENCES public.projeto (id_projeto) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 21:52:34 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-30 21:52:34 -03 DETAIL:  Key (id_projeto)=(1) is not present in table "projeto".
+2019-07-30 21:52:34 -03 STATEMENT:  ALTER TABLE public.situacao
+	  ADD COLUMN id_projeto serial;
+	ALTER TABLE public.situacao
+	  ADD COLUMN id_situacao serial;
+	ALTER TABLE public.situacao
+	  ADD PRIMARY KEY (id_situacao);
+	ALTER TABLE public.situacao
+	  ADD FOREIGN KEY (id_projeto) REFERENCES public.projeto (id_projeto) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 21:56:18 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-30 21:56:18 -03 DETAIL:  Key (id_projeto)=(1) is not present in table "projeto".
+2019-07-30 21:56:18 -03 STATEMENT:  ALTER TABLE public.situacao
+	  ADD COLUMN id_projeto serial NOT NULL;
+	ALTER TABLE public.situacao
+	  ADD COLUMN id_situacao serial NOT NULL;
+	ALTER TABLE public.situacao
+	  ADD PRIMARY KEY (id_situacao, id_projeto);
+	ALTER TABLE public.situacao
+	  ADD FOREIGN KEY (id_projeto) REFERENCES public.projeto (id_projeto) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 21:56:28 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-30 21:56:28 -03 DETAIL:  Key (id_projeto)=(1) is not present in table "projeto".
+2019-07-30 21:56:28 -03 STATEMENT:  ALTER TABLE public.situacao
+	  ADD COLUMN id_projeto serial NOT NULL;
+	ALTER TABLE public.situacao
+	  ADD COLUMN id_situacao serial NOT NULL;
+	ALTER TABLE public.situacao
+	  ADD PRIMARY KEY (id_situacao, id_projeto);
+	ALTER TABLE public.situacao
+	  ADD FOREIGN KEY (id_projeto) REFERENCES public.projeto (id_projeto) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 22:01:04 -03 ERROR:  insert or update on table "cordenador" violates foreign key constraint "cordenador_id_projeto_fkey"
+2019-07-30 22:01:04 -03 DETAIL:  Key (id_projeto)=(1) is not present in table "projeto".
+2019-07-30 22:01:04 -03 STATEMENT:  ALTER TABLE public.cordenador
+	  ADD COLUMN id_projeto serial NOT NULL;
+	ALTER TABLE public.cordenador
+	  ADD COLUMN id_cord serial NOT NULL;
+	ALTER TABLE public.cordenador
+	  ADD PRIMARY KEY (id_projeto, id_cord);
+	ALTER TABLE public.cordenador
+	  ADD FOREIGN KEY (id_projeto) REFERENCES public.projeto (id_projeto) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 22:08:39 -03 ERROR:  relation "aluno" already exists
+2019-07-30 22:08:39 -03 STATEMENT:  CREATE TABLE public.aluno
+	(
+	   nome character varying(30), 
+	   id_aluno serial NOT NULL, 
+	   PRIMARY KEY (id_aluno)
+	) 
+	WITH (
+	  OIDS = FALSE
+	)
+	;
+	
+2019-07-30 22:11:27 -03 ERROR:  there is no unique constraint matching given keys for referenced table "cordenador"
+2019-07-30 22:11:27 -03 STATEMENT:  CREATE TABLE public.orientacao
+	(
+	   id_cord serial NOT NULL, 
+	   id_aluno serial NOT NULL, 
+	   PRIMARY KEY (id_cord, id_aluno), 
+	   FOREIGN KEY (id_aluno) REFERENCES public.aluno (id_aluno) ON UPDATE NO ACTION ON DELETE NO ACTION, 
+	   FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION
+	) 
+	WITH (
+	  OIDS = FALSE
+	)
+	;
+	
+2019-07-30 22:13:46 -03 ERROR:  there is no unique constraint matching given keys for referenced table "cordenador"
+2019-07-30 22:13:46 -03 STATEMENT:  CREATE TABLE public.orientacao
+	(
+	   id_cord serial NOT NULL, 
+	   id_aluno serial NOT NULL, 
+	   PRIMARY KEY (id_cord, id_aluno), 
+	   FOREIGN KEY (id_aluno) REFERENCES public.aluno (id_aluno) ON UPDATE NO ACTION ON DELETE NO ACTION, 
+	   FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION
+	) 
+	WITH (
+	  OIDS = FALSE
+	)
+	;
+	
+2019-07-30 22:16:16 -03 ERROR:  there is no unique constraint matching given keys for referenced table "cordenador"
+2019-07-30 22:16:16 -03 STATEMENT:  ALTER TABLE public.orientacao
+	  ADD FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord)
+	   ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 22:18:47 -03 ERROR:  there is no unique constraint matching given keys for referenced table "cordenador"
+2019-07-30 22:18:47 -03 STATEMENT:  ALTER TABLE public.orientacao
+	  DROP CONSTRAINT orientacao_pkey;
+	ALTER TABLE public.orientacao
+	  DROP CONSTRAINT orientacao_id_aluno_fkey;
+	ALTER TABLE public.orientacao
+	  ADD PRIMARY KEY (id_cord);
+	ALTER TABLE public.orientacao
+	  ADD FOREIGN KEY (id_aluno) REFERENCES public.aluno (id_aluno) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	ALTER TABLE public.orientacao
+	  ADD FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 22:26:58 -03 ERROR:  there is no unique constraint matching given keys for referenced table "cordenador"
+2019-07-30 22:26:58 -03 STATEMENT:  CREATE TABLE public.orientacao
+	(
+	   id_aluno serial NOT NULL, 
+	   id_cord serial NOT NULL, 
+	   PRIMARY KEY (id_aluno, id_cord), 
+	   FOREIGN KEY (id_aluno) REFERENCES public.aluno (id_aluno) ON UPDATE NO ACTION ON DELETE NO ACTION, 
+	   FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION
+	) 
+	WITH (
+	  OIDS = FALSE
+	)
+	;
+	
+2019-07-30 22:28:35 -03 ERROR:  there is no unique constraint matching given keys for referenced table "cordenador"
+2019-07-30 22:28:35 -03 STATEMENT:  CREATE TABLE public.orientacao
+	(
+	   id_aluno serial NOT NULL, 
+	   id_cord serial NOT NULL, 
+	   PRIMARY KEY (id_aluno, id_cord), 
+	   FOREIGN KEY (id_aluno) REFERENCES public.aluno (id_aluno) ON UPDATE NO ACTION ON DELETE NO ACTION, 
+	   FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION
+	) 
+	WITH (
+	  OIDS = FALSE
+	)
+	;
+	
+2019-07-30 22:35:05 -03 ERROR:  there is no unique constraint matching given keys for referenced table "orientacao"
+2019-07-30 22:35:05 -03 STATEMENT:  ALTER TABLE public.cordenador
+	  ADD FOREIGN KEY (id_cord) REFERENCES public.orientacao (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-30 22:37:41 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-07-30 22:37:42 -03 LOG:  interrompendo quaisquer transações ativas
+2019-07-30 22:37:42 -03 LOG:  autovacuum launcher shutting down
+2019-07-30 22:37:49 -03 LOG:  shutting down
+2019-07-30 22:37:49 -03 LOG:  database system is shut down

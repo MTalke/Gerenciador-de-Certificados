@@ -1,0 +1,30 @@
+2019-08-06 09:41:31 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-06 09:41:31 -03 DETAIL:  Failing row contains (null, null).
+2019-08-06 09:41:31 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15), id_sit=NULL::integer WHERE id_sit = '55'::integer
+2019-08-06 09:41:36 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-06 09:41:36 -03 DETAIL:  Failing row contains (null, null).
+2019-08-06 09:41:36 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15), id_sit=NULL::integer WHERE id_sit = '55'::integer
+2019-08-06 09:41:38 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-06 09:41:38 -03 DETAIL:  Failing row contains (null, null).
+2019-08-06 09:41:38 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15), id_sit=NULL::integer WHERE id_sit = '55'::integer
+2019-08-06 09:41:44 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-06 09:41:44 -03 DETAIL:  Failing row contains (null, null).
+2019-08-06 09:41:44 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15), id_sit=NULL::integer WHERE id_sit = '55'::integer
+2019-08-06 09:41:50 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-06 09:41:50 -03 DETAIL:  Failing row contains (null, null).
+2019-08-06 09:41:50 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15), id_sit=NULL::integer WHERE id_sit = '55'::integer
+2019-08-06 09:41:53 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-06 09:41:53 -03 DETAIL:  Failing row contains (null, null).
+2019-08-06 09:41:53 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15), id_sit=NULL::integer WHERE id_sit = '55'::integer
+2019-08-06 11:36:24 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-06 11:44:42 -03 ERROR:  missing FROM-clause entry for table "nome" at character 8
+2019-08-06 11:44:42 -03 STATEMENT:  select nome.al
+	from orientacao ori
+	join aluno al
+	on ori.id_aluno = al.id_aluno
+	where ori.id_aluno = 2;
+2019-08-06 11:59:35 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-06 11:59:36 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-06 11:59:36 -03 LOG:  autovacuum launcher shutting down
+2019-08-06 11:59:39 -03 LOG:  shutting down
+2019-08-06 11:59:40 -03 LOG:  database system is shut down

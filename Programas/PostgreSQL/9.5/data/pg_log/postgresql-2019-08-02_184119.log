@@ -1,0 +1,179 @@
+2019-08-02 18:41:19 -03 LOG:  database system was shut down at 2019-08-02 17:28:08 -03
+2019-08-02 18:41:19 -03 FATAL:  the database system is starting up
+2019-08-02 18:41:20 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-08-02 18:41:20 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-08-02 18:41:20 -03 LOG:  autovacuum launcher started
+2019-08-02 19:20:38 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-02 19:20:38 -03 DETAIL:  Key (id_sit)=(7) is not present in table "situacao".
+2019-08-02 19:20:38 -03 STATEMENT:  UPDATE public.projeto SET id_sit='7'::integer WHERE id_projeto = '1'::integer
+2019-08-02 19:28:33 -03 ERROR:  insert or update on table "aluno" violates foreign key constraint "aluno_id_cord_fkey"
+2019-08-02 19:28:33 -03 DETAIL:  Key (id_cord)=(4) is not present in table "cordenador".
+2019-08-02 19:28:33 -03 STATEMENT:  ALTER TABLE public.aluno
+	  ADD COLUMN id_cord serial NOT NULL;
+	ALTER TABLE public.aluno
+	  ADD FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-08-02 19:33:54 -03 ERROR:  insert or update on table "aluno" violates foreign key constraint "aluno_id_cord_fkey"
+2019-08-02 19:33:54 -03 DETAIL:  Key (id_cord)=(4) is not present in table "cordenador".
+2019-08-02 19:33:54 -03 STATEMENT:  ALTER TABLE public.aluno
+	  ADD COLUMN id_cord serial NOT NULL;
+	ALTER TABLE public.aluno
+	  ADD FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-08-02 19:34:53 -03 ERROR:  insert or update on table "aluno" violates foreign key constraint "aluno_id_cord_fkey"
+2019-08-02 19:34:53 -03 DETAIL:  Key (id_cord)=(6) is not present in table "cordenador".
+2019-08-02 19:34:53 -03 STATEMENT:  ALTER TABLE public.aluno
+	  ADD COLUMN id_cord serial NOT NULL;
+	ALTER TABLE public.aluno
+	  ADD FOREIGN KEY (id_cord) REFERENCES public.cordenador (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-08-02 19:37:55 -03 ERROR:  INSERT has more target columns than expressions at character 33
+2019-08-02 19:37:55 -03 STATEMENT:  insert into cordenador (id_cord,nome) values ('filomena')
+2019-08-02 19:38:27 -03 ERROR:  duplicate key value violates unique constraint "cordenador_pkey"
+2019-08-02 19:38:27 -03 DETAIL:  Key (id_cord)=(4) already exists.
+2019-08-02 19:38:27 -03 STATEMENT:  insert into cordenador (nome) values ('filomena')
+2019-08-02 19:39:01 -03 ERROR:  INSERT has more target columns than expressions at character 33
+2019-08-02 19:39:01 -03 STATEMENT:  insert into cordenador (id_cord,nome) values ('filomena')
+2019-08-02 19:40:07 -03 ERROR:  column "filomena" does not exist at character 47
+2019-08-02 19:40:07 -03 STATEMENT:  insert into cordenador (id_cord,nome) values ("filomena")
+2019-08-02 19:45:16 -03 ERROR:  duplicate key value violates unique constraint "cordenador_pkey"
+2019-08-02 19:45:16 -03 DETAIL:  Key (id_cord)=(5) already exists.
+2019-08-02 19:45:16 -03 STATEMENT:  insert into cordenador (nome) values ('filomena')
+2019-08-02 19:45:22 -03 ERROR:  duplicate key value violates unique constraint "cordenador_pkey"
+2019-08-02 19:45:22 -03 DETAIL:  Key (id_cord)=(6) already exists.
+2019-08-02 19:45:22 -03 STATEMENT:  insert into cordenador (nome) values ('filomena')
+2019-08-02 19:45:23 -03 ERROR:  duplicate key value violates unique constraint "cordenador_pkey"
+2019-08-02 19:45:23 -03 DETAIL:  Key (id_cord)=(7) already exists.
+2019-08-02 19:45:23 -03 STATEMENT:  insert into cordenador (nome) values ('filomena')
+2019-08-02 19:56:21 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-02 20:23:20 -03 ERROR:  syntax error at or near ")" at character 26
+2019-08-02 20:23:20 -03 STATEMENT:   insert into orientacao () values() 
+2019-08-02 20:27:32 -03 ERROR:  syntax error at or near ")" at character 25
+2019-08-02 20:27:32 -03 STATEMENT:  insert into orientacao () values()
+	
+2019-08-02 20:53:12 -03 ERROR:  syntax error at or near ")" at character 25
+2019-08-02 20:53:12 -03 STATEMENT:  insert into orientacao () values('')
+	
+2019-08-02 20:53:19 -03 ERROR:  syntax error at or near "''" at character 25
+2019-08-02 20:53:19 -03 STATEMENT:  insert into orientacao ('') values('')
+	
+2019-08-02 20:53:26 -03 ERROR:  syntax error at or near "''" at character 25
+2019-08-02 20:53:26 -03 STATEMENT:  insert into orientacao ('') values()
+	
+2019-08-02 20:53:34 -03 ERROR:  syntax error at end of input at character 26
+2019-08-02 20:53:34 -03 STATEMENT:  insert into orientacao 
+	
+2019-08-02 20:53:52 -03 ERROR:  syntax error at end of input at character 32
+2019-08-02 20:53:52 -03 STATEMENT:  insert into orientacao values
+	
+2019-08-02 20:53:58 -03 ERROR:  syntax error at end of input at character 34
+2019-08-02 20:53:58 -03 STATEMENT:  insert into 
+	orientacao values
+	
+2019-08-02 20:54:17 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-02 20:54:50 -03 ERROR:  syntax error at end of input at character 23
+2019-08-02 20:54:50 -03 STATEMENT:  insert into orientacao
+2019-08-02 20:55:07 -03 ERROR:  syntax error at or near ")" at character 25
+2019-08-02 20:55:07 -03 STATEMENT:  insert into orientacao () values 
+2019-08-02 20:55:17 -03 ERROR:  syntax error at or near ")" at character 25
+2019-08-02 20:55:17 -03 STATEMENT:  insert into orientacao () values ()
+2019-08-02 20:55:21 -03 ERROR:  syntax error at or near ")" at character 25
+2019-08-02 20:55:21 -03 STATEMENT:  insert into orientacao () 
+	values ()
+2019-08-02 20:55:29 -03 ERROR:  syntax error at or near ")" at character 35
+2019-08-02 20:55:29 -03 STATEMENT:  insert into orientacao  
+	values ()
+2019-08-02 20:55:40 -03 ERROR:  invalid input syntax for integer: "" at character 35
+2019-08-02 20:55:40 -03 STATEMENT:  insert into orientacao  
+	values ('')
+2019-08-02 20:55:50 -03 ERROR:  zero-length delimited identifier at or near """" at character 35
+2019-08-02 20:55:50 -03 STATEMENT:  insert into orientacao  
+	values ("")
+2019-08-02 20:55:55 -03 ERROR:  syntax error at or near ")" at character 35
+2019-08-02 20:55:55 -03 STATEMENT:  insert into orientacao  
+	values ()
+2019-08-02 21:22:44 -03 ERROR:  constraint "orientacao_pkey" of relation "orientacao" does not exist
+2019-08-02 21:22:44 -03 STATEMENT:  ALTER TABLE public.orientacao
+	  DROP COLUMN id_orientacao;
+	ALTER TABLE public.orientacao
+	  ADD COLUMN id_ori serial NOT NULL;
+	ALTER TABLE public.orientacao
+	  DROP CONSTRAINT orientacao_pkey;
+	ALTER TABLE public.orientacao
+	  ADD PRIMARY KEY (id_aluno, id_cord, id_ori);
+	
+2019-08-02 21:23:05 -03 ERROR:  constraint "orientacao_pkey" of relation "orientacao" does not exist
+2019-08-02 21:23:05 -03 STATEMENT:  ALTER TABLE public.orientacao
+	  DROP COLUMN id_orientacao;
+	ALTER TABLE public.orientacao
+	  ADD COLUMN id_ori serial NOT NULL;
+	ALTER TABLE public.orientacao
+	  DROP CONSTRAINT orientacao_pkey;
+	ALTER TABLE public.orientacao
+	  ADD PRIMARY KEY (id_aluno, id_cord, id_ori);
+	
+2019-08-02 21:26:16 -03 ERROR:  relation "orintacao" does not exist at character 13
+2019-08-02 21:26:16 -03 STATEMENT:  insert into orintacao (data) values ('2019-07-09')
+2019-08-02 21:26:25 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:25 -03 DETAIL:  Key (id_aluno)=(2) is not present in table "aluno".
+2019-08-02 21:26:25 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:33 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:33 -03 DETAIL:  Key (id_aluno)=(3) is not present in table "aluno".
+2019-08-02 21:26:33 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:34 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:34 -03 DETAIL:  Key (id_aluno)=(4) is not present in table "aluno".
+2019-08-02 21:26:34 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:34 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:34 -03 DETAIL:  Key (id_aluno)=(5) is not present in table "aluno".
+2019-08-02 21:26:34 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:36 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:36 -03 DETAIL:  Key (id_aluno)=(6) is not present in table "aluno".
+2019-08-02 21:26:36 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:36 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:36 -03 DETAIL:  Key (id_aluno)=(7) is not present in table "aluno".
+2019-08-02 21:26:36 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:37 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:37 -03 DETAIL:  Key (id_aluno)=(8) is not present in table "aluno".
+2019-08-02 21:26:37 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:37 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:37 -03 DETAIL:  Key (id_aluno)=(9) is not present in table "aluno".
+2019-08-02 21:26:37 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:38 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:38 -03 DETAIL:  Key (id_aluno)=(10) is not present in table "aluno".
+2019-08-02 21:26:38 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:26:39 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:26:39 -03 DETAIL:  Key (id_aluno)=(11) is not present in table "aluno".
+2019-08-02 21:26:39 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:27:27 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:27:27 -03 DETAIL:  Key (id_aluno)=(12) is not present in table "aluno".
+2019-08-02 21:27:27 -03 STATEMENT:  insert into orientacao (data) values ('2019-07-09')
+2019-08-02 21:30:05 -03 ERROR:  invalid input syntax for type date: "" at character 39
+2019-08-02 21:30:05 -03 STATEMENT:  insert into orientacao (data) values ('')
+2019-08-02 21:30:16 -03 ERROR:  invalid input syntax for type date: " " at character 39
+2019-08-02 21:30:16 -03 STATEMENT:  insert into orientacao (data) values (' ')
+2019-08-02 21:30:29 -03 ERROR:  zero-length delimited identifier at or near """" at character 39
+2019-08-02 21:30:29 -03 STATEMENT:  insert into orientacao (data) values ("")
+2019-08-02 21:30:39 -03 ERROR:  invalid input syntax for type date: """" at character 39
+2019-08-02 21:30:39 -03 STATEMENT:  insert into orientacao (data) values ('""')
+2019-08-02 21:30:55 -03 ERROR:  column """ does not exist at character 39
+2019-08-02 21:30:55 -03 STATEMENT:  insert into orientacao (data) values ("""")
+2019-08-02 21:31:03 -03 ERROR:  column "''" does not exist at character 39
+2019-08-02 21:31:03 -03 STATEMENT:  insert into orientacao (data) values ("''")
+2019-08-02 21:31:09 -03 ERROR:  syntax error at or near ")" at character 39
+2019-08-02 21:31:09 -03 STATEMENT:  insert into orientacao (data) values ()
+2019-08-02 21:31:14 -03 ERROR:  invalid input syntax for type date: "" at character 39
+2019-08-02 21:31:14 -03 STATEMENT:  insert into orientacao (data) values ('')
+2019-08-02 21:31:18 -03 ERROR:  invalid input syntax for type date: "   " at character 39
+2019-08-02 21:31:18 -03 STATEMENT:  insert into orientacao (data) values ('   ')
+2019-08-02 21:31:24 -03 ERROR:  invalid input syntax for type date: " '" at character 39
+2019-08-02 21:31:24 -03 STATEMENT:  insert into orientacao (data) values (' ''')
+2019-08-02 21:31:33 -03 ERROR:  syntax error at end of input at character 31
+2019-08-02 21:31:33 -03 STATEMENT:  insert into orientacao (data) 
+2019-08-02 21:31:47 -03 ERROR:  invalid input syntax for type date: " " at character 39
+2019-08-02 21:31:47 -03 STATEMENT:  insert into orientacao (data) values (' ')
+2019-08-02 21:31:53 -03 ERROR:  invalid input syntax for type date: " " at character 41
+2019-08-02 21:31:53 -03 STATEMENT:  insert into orientacao (data) 
+	values (' ')
+2019-08-02 21:36:46 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-02 21:36:46 -03 DETAIL:  Key (id_aluno)=(14) is not present in table "aluno".
+2019-08-02 21:36:46 -03 STATEMENT:  insert into orientacao (data) values (null)

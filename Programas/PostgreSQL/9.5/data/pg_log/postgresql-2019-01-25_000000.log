@@ -1,0 +1,5 @@
+2019-01-25 20:47:45 -03 ERROR:  relation "medicos" does not exist at character 14
+2019-01-25 20:47:45 -03 STATEMENT:   insert into Medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-01-25 21:17:46 -03 ERROR:  relation "medicos" does not exist at character 14
+2019-01-25 21:17:46 -03 STATEMENT:   insert into Medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-01-25 21:46:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054

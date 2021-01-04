@@ -1,0 +1,4 @@
+2019-08-26 09:29:12 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-26 09:39:12 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-26 09:39:12 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  

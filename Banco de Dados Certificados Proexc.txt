@@ -1,0 +1,99 @@
+
+
+
+
+CREATE DATABASE "Certificados"
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
+       CONNECTION LIMIT = -1;
+
+
+
+
+CREATE TABLE public.aluno
+(
+  id_aluno integer NOT NULL DEFAULT nextval('aluno_id_aluno_seq'::regclass),
+  nome_aluno character varying(40),
+  CONSTRAINT aluno_pkey PRIMARY KEY (id_aluno)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.aluno
+  OWNER TO postgres;
+
+
+
+
+CREATE TABLE public.situacao
+(
+  id_sit integer NOT NULL DEFAULT nextval('situacao_id_sit_seq'::regclass),
+  estado character varying(15) NOT NULL,
+  CONSTRAINT situacao_pkey PRIMARY KEY (id_sit)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.situacao
+  OWNER TO postgres;
+
+
+
+CREATE TABLE public.coordenador
+(
+  id_coord integer NOT NULL DEFAULT nextval('coordenador_id_coord_seq'::regclass),
+  nome_coord character varying(40),
+  CONSTRAINT coordenador_pkey PRIMARY KEY (id_coord)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.coordenador
+  OWNER TO postgres;
+
+
+
+
+CREATE TABLE public.projeto
+(
+  id_proj integer NOT NULL DEFAULT nextval('projeto_id_proj_seq'::regclass),
+  id_coord integer NOT NULL DEFAULT nextval('projeto_id_coord_seq'::regclass),
+  id_sit integer NOT NULL DEFAULT nextval('projeto_id_sit_seq'::regclass),
+  nome_projeto character varying(100),
+  CONSTRAINT projeto_pkey PRIMARY KEY (id_proj, id_coord, id_sit),
+  CONSTRAINT projeto_id_coord_fkey FOREIGN KEY (id_coord)
+      REFERENCES public.coordenador (id_coord) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT projeto_id_sit_fkey FOREIGN KEY (id_sit)
+      REFERENCES public.situacao (id_sit) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.projeto
+  OWNER TO postgres;
+
+
+
+
+CREATE TABLE public.orientador
+(
+  id_aluno integer NOT NULL,
+  id_coord integer NOT NULL,
+  CONSTRAINT orientador_pkey PRIMARY KEY (id_aluno, id_coord),
+  CONSTRAINT orientador_id_aluno_fkey FOREIGN KEY (id_aluno)
+      REFERENCES public.aluno (id_aluno) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT orientador_id_coord_fkey FOREIGN KEY (id_coord)
+      REFERENCES public.coordenador (id_coord) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.orientador
+  OWNER TO postgres;

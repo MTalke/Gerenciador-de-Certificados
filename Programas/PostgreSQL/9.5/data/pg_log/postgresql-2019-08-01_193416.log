@@ -1,0 +1,54 @@
+2019-08-01 19:34:16 -03 FATAL:  the database system is starting up
+2019-08-01 19:34:16 -03 LOG:  database system was shut down at 2019-08-01 17:26:18 -03
+2019-08-01 19:34:16 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-08-01 19:34:16 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-08-01 19:34:16 -03 LOG:  autovacuum launcher started
+2019-08-01 19:50:30 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-08-01 20:38:49 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 20:46:54 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 20:49:02 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 20:49:40 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 20:54:32 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 21:53:10 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-01 21:53:10 -03 DETAIL:  Key (id_sit)=(1) is not present in table "situacao".
+2019-08-01 21:53:10 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-01 21:53:29 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 21:54:55 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:17:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:19:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:20:42 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-01 22:20:42 -03 DETAIL:  Key (id_sit)=(2) is not present in table "situacao".
+2019-08-01 22:20:42 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-01 22:21:12 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:25:09 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:25:50 -03 ERROR:  column "data" is of type date but expression is of type character varying at character 47
+2019-08-01 22:25:50 -03 HINT:  You will need to rewrite or cast the expression.
+2019-08-01 22:25:50 -03 STATEMENT:   insert into situacao (estado,data) values($1,$2) 
+2019-08-01 22:26:12 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:32:28 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_cord_fkey"
+2019-08-01 22:32:28 -03 DETAIL:  Key (id_cord)=(3) is not present in table "cordenador".
+2019-08-01 22:32:28 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-01 22:32:47 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:43:46 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_cord_fkey"
+2019-08-01 22:43:46 -03 DETAIL:  Key (id_cord)=(4) is not present in table "cordenador".
+2019-08-01 22:43:46 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-01 22:44:19 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:44:19 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:51:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:52:36 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_cord_fkey"
+2019-08-01 22:52:36 -03 DETAIL:  Key (id_cord)=(5) is not present in table "cordenador".
+2019-08-01 22:52:36 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-01 22:54:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:54:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 22:54:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 23:17:26 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_cord_fkey"
+2019-08-01 23:17:26 -03 DETAIL:  Key (id_cord)=(6) is not present in table "cordenador".
+2019-08-01 23:17:26 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-01 23:20:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 23:20:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 23:20:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-01 23:22:27 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-01 23:22:28 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-01 23:22:28 -03 LOG:  autovacuum launcher shutting down
+2019-08-01 23:22:31 -03 LOG:  shutting down
+2019-08-01 23:22:31 -03 LOG:  database system is shut down

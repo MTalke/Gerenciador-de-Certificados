@@ -1,0 +1,7 @@
+2019-08-05 10:15:07 -03 WARNING:  worker took too long to start; canceled
+2019-08-05 10:15:21 -03 WARNING:  autovacuum worker started without a worker entry
+2019-08-05 10:33:30 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-05 10:33:31 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-05 10:33:31 -03 LOG:  autovacuum launcher shutting down
+2019-08-05 10:33:35 -03 LOG:  shutting down
+2019-08-05 10:33:35 -03 LOG:  database system is shut down

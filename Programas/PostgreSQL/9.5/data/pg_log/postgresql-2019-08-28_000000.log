@@ -1,0 +1,7 @@
+2019-08-28 15:12:31 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-28 16:57:39 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-28 16:57:39 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-28 17:12:12 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-28 20:38:57 -03 ERROR:  missing FROM-clause entry for table "coorde" at character 314
+2019-08-28 20:38:57 -03 STATEMENT:   select   al.id_aluno, al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coorde.nome_coord 

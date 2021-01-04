@@ -1,0 +1,5 @@
+2019-08-10 19:46:03 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-10 19:46:06 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-10 19:46:06 -03 LOG:  autovacuum launcher shutting down
+2019-08-10 19:46:13 -03 LOG:  shutting down
+2019-08-10 19:46:17 -03 LOG:  database system is shut down

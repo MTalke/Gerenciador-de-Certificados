@@ -1,0 +1,120 @@
+2019-08-19 09:49:42 -03 ERROR:  operator does not exist: integer ~~ unknown at character 49
+2019-08-19 09:49:42 -03 HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2019-08-19 09:49:42 -03 STATEMENT:  update aluno set nome_aluno = $1 where id_aluno like'%3%' 
+2019-08-19 11:11:57 -03 ERROR:  column "nome_aluno" does not exist at character 41
+2019-08-19 11:11:57 -03 STATEMENT:  select  id_coord from coordenador where nome_aluno like'%null%'
+2019-08-19 16:59:46 -03 ERROR:  syntax error at or near "*" at character 8
+2019-08-19 16:59:46 -03 STATEMENT:  Delete *from situacao s
+	join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 16:59:54 -03 ERROR:  syntax error at or near "join" at character 25
+2019-08-19 16:59:54 -03 STATEMENT:  Delete from situacao s
+	join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:02:06 -03 ERROR:  syntax error at or near "inner" at character 25
+2019-08-19 17:02:06 -03 STATEMENT:  Delete from situacao s
+	inner join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:02:19 -03 ERROR:  syntax error at or near "join" at character 24
+2019-08-19 17:02:19 -03 STATEMENT:  Delete from situacao s join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:04:03 -03 ERROR:  syntax error at or near "on" at character 24
+2019-08-19 17:04:03 -03 STATEMENT:  Delete from situacao s on join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:04:24 -03 ERROR:  syntax error at or near "join" at character 24
+2019-08-19 17:04:24 -03 STATEMENT:  Delete from situacao s join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:05:04 -03 ERROR:  syntax error at or near "join" at character 24
+2019-08-19 17:05:04 -03 STATEMENT:  Delete from situacao s join projeto p
+	on p.id_sit = s.id_sit
+	where s.id_sit= 15
+	
+	
+2019-08-19 17:05:57 -03 ERROR:  syntax error at or near "join" at character 26
+2019-08-19 17:05:57 -03 STATEMENT:  Delete from situacao s 
+	join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:06:47 -03 ERROR:  syntax error at or near "*" at character 8
+2019-08-19 17:06:47 -03 STATEMENT:  Delete *from situacao s 
+	join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:06:55 -03 ERROR:  syntax error at or near "join" at character 26
+2019-08-19 17:06:55 -03 STATEMENT:  Delete from situacao s 
+	join projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:15:15 -03 ERROR:  syntax error at or near "JOIN" at character 26
+2019-08-19 17:15:15 -03 STATEMENT:  Delete from situacao s 
+	JOIN projeto p
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'francisco o rio'
+	
+	
+2019-08-19 17:24:34 -03 ERROR:  syntax error at or near "*" at character 8
+2019-08-19 17:24:34 -03 STATEMENT:  Delete *from projeto p
+	inner join situacao s
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'jequitinhonha'
+	
+	
+2019-08-19 17:24:40 -03 ERROR:  syntax error at or near "inner" at character 24
+2019-08-19 17:24:40 -03 STATEMENT:  Delete from projeto p
+	inner join situacao s
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'jequitinhonha'
+	
+	
+2019-08-19 17:24:56 -03 ERROR:  syntax error at or near "INNER" at character 24
+2019-08-19 17:24:56 -03 STATEMENT:  Delete from projeto p
+	INNER JOIN situacao s
+	on p.id_sit = s.id_sit
+	where p.nome_projeto = 'jequitinhonha'
+	
+	
+2019-08-19 17:26:17 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-19 17:26:17 -03 DETAIL:  Key (id_sit)=(15) is still referenced from table "projeto".
+2019-08-19 17:26:17 -03 STATEMENT:  delete from situacao where id_sit = 15
+	
+	
+2019-08-19 17:31:48 -03 ERROR:  update or delete on table "coordenador" violates foreign key constraint "orientacao_id_coord_fkey" on table "orientacao"
+2019-08-19 17:31:48 -03 DETAIL:  Key (id_coord)=(15) is still referenced from table "orientacao".
+2019-08-19 17:31:48 -03 STATEMENT:  delete from coordenador where nome_coord ='maite' and id_coord = 15
+	
+	
+2019-08-19 17:32:51 -03 ERROR:  relation "corientacao" does not exist at character 13
+2019-08-19 17:32:51 -03 STATEMENT:  delete from corientacao where id_coord = 15
+	
+	
+2019-08-19 17:34:19 -03 ERROR:  column "id_coord" does not exist at character 25
+2019-08-19 17:34:19 -03 STATEMENT:  delete from aluno where id_coord = 15
+	
+	
+2019-08-19 20:25:41 -03 ERROR:  operator does not exist: character varying = integer at character 36
+2019-08-19 20:25:41 -03 HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2019-08-19 20:25:41 -03 STATEMENT:  delete from aluno where nome_aluno = $1

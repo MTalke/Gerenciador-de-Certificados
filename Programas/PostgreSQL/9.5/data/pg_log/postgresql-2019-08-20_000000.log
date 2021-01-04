@@ -1,0 +1,113 @@
+2019-08-20 09:37:49 -03 ERROR:  syntax error at or near "=" at character 41
+2019-08-20 09:37:49 -03 STATEMENT:  select from aluno where nome_aluno like = 'm'
+2019-08-20 10:04:51 -03 ERROR:  column coord.id_aluno does not exist at character 313
+2019-08-20 10:04:51 -03 HINT:  Perhaps you meant to reference the column "ori.id_aluno".
+2019-08-20 10:04:51 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	where coord.id_aluno = 2
+	
+2019-08-20 10:12:23 -03 ERROR:  operator does not exist: integer ~~ unknown at character 310
+2019-08-20 10:12:23 -03 HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2019-08-20 10:12:23 -03 STATEMENT:   select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit where al.id_aluno like '%13%' 
+2019-08-20 10:18:10 -03 ERROR:  operator does not exist: integer ~~ unknown at character 310
+2019-08-20 10:18:10 -03 HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2019-08-20 10:18:10 -03 STATEMENT:   select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit where al.id_aluno like '%13%' 
+2019-08-20 18:32:33 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_aluno_fkey"
+2019-08-20 18:32:33 -03 DETAIL:  Key (id_aluno)=(5) is not present in table "aluno".
+2019-08-20 18:32:33 -03 STATEMENT:  insert into orientador (id_aluno,id_coord) values(5,3)
+2019-08-20 18:35:09 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-20 18:35:09 -03 DETAIL:  Key (id_aluno)=(20) is not present in table "aluno".
+2019-08-20 18:35:09 -03 STATEMENT:   insert into orientacao (data) values($1) 
+2019-08-20 18:40:39 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-20 18:51:51 -03 ERROR:  null value in column "estado" violates not-null constraint
+2019-08-20 18:51:51 -03 DETAIL:  Failing row contains (22, null).
+2019-08-20 18:51:51 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-20 18:51:56 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-20 18:51:56 -03 DETAIL:  Key (id_sit)=(22) is not present in table "situacao".
+2019-08-20 18:51:56 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-20 18:56:54 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-20 18:56:54 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-20 20:03:23 -03 ERROR:  argument of WHERE must be type boolean, not type integer at character 309
+2019-08-20 20:03:23 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	where coord.id_coord
+	
+2019-08-20 20:05:28 -03 ERROR:  syntax error at or near "on" at character 303
+2019-08-20 20:05:28 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	on coord.id_coord = al.id_aluno;
+	
+2019-08-20 20:05:44 -03 ERROR:  syntax error at or near "on" at character 303
+2019-08-20 20:05:44 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	on coord.id_coord = al.id_aluno
+2019-08-20 20:07:19 -03 ERROR:  syntax error at or near "order" at character 25
+2019-08-20 20:07:19 -03 STATEMENT:  select   al.nome_aluno, order by coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	
+2019-08-20 20:08:14 -03 ERROR:  syntax error at or near "order" at character 25
+2019-08-20 20:08:14 -03 STATEMENT:  select   al.nome_aluno, order by (coord.nome_coord), proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	
+2019-08-20 20:10:18 -03 ERROR:  syntax error at or near "order" at character 101
+2019-08-20 20:10:18 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join  order by coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	
+2019-08-20 20:10:33 -03 ERROR:  syntax error at or near "order" at character 79
+2019-08-20 20:10:33 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from  order by  orientador ori 
+	join  coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	
+2019-08-20 20:28:25 -03 ERROR:  column "matheus" does not exist at character 358
+2019-08-20 20:28:25 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord, proj.nome_projeto,sit.estado 
+	from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al on al.id_aluno = ori.id_aluno 
+	join projeto proj on coord.id_coord = proj.id_proj 
+	join situacao sit on sit.id_sit = proj.id_sit 
+	and coord.id_coord = al.id_aluno 
+	where al.nome_aluno = "matheus"

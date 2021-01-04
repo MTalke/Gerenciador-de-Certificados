@@ -1,0 +1,101 @@
+2019-07-26 08:23:28 -03 WARNING:  worker took too long to start; canceled
+2019-07-26 08:23:48 -03 WARNING:  autovacuum worker started without a worker entry
+2019-07-26 11:58:33 -03 ERROR:  syntax error at or near "as" at character 55
+2019-07-26 11:58:33 -03 STATEMENT:  select nome = "unai" from projeto p join cordenador c as p.id_projeto = c.id_projeto ;
+2019-07-26 11:58:40 -03 ERROR:  syntax error at or near "p" at character 56
+2019-07-26 11:58:40 -03 STATEMENT:  select nome = "unai" from projeto p join cordenador c  p.id_projeto = c.id_projeto ;
+2019-07-26 11:58:51 -03 ERROR:  syntax error at or near "," at character 55
+2019-07-26 11:58:51 -03 STATEMENT:  select nome = "unai" from projeto p join cordenador c , p.id_projeto = c.id_projeto ;
+2019-07-26 11:59:00 -03 ERROR:  syntax error at or near "where" at character 55
+2019-07-26 11:59:00 -03 STATEMENT:  select nome = "unai" from projeto p join cordenador c where p.id_projeto = c.id_projeto ;
+2019-07-26 15:59:23 -03 ERROR:  column reference "nome" is ambiguous at character 8
+2019-07-26 15:59:23 -03 STATEMENT:  select nome from projeto p,cordenador c  where p.nome = 'unai'
+2019-07-26 16:01:07 -03 ERROR:  syntax error at or near "in" at character 41
+2019-07-26 16:01:07 -03 STATEMENT:  select nome from projeto p,cordenador c in p.id_projeto = c.id_projeto where p.id_projeto = 2016
+2019-07-26 16:01:17 -03 ERROR:  syntax error at or near "=" at character 56
+2019-07-26 16:01:17 -03 STATEMENT:  select nome from projeto p,cordenador c,  p.id_projeto = c.id_projeto where p.id_projeto = 2016
+2019-07-26 16:01:22 -03 ERROR:  syntax error at or near "==" at character 56
+2019-07-26 16:01:22 -03 STATEMENT:  select nome from projeto p,cordenador c,  p.id_projeto == c.id_projeto where p.id_projeto = 2016
+2019-07-26 16:06:12 -03 ERROR:  column reference "nome" is ambiguous at character 8
+2019-07-26 16:06:12 -03 STATEMENT:  select nome from projeto p join cordenador c on p.id_projeto = c.id_projeto
+2019-07-26 16:07:37 -03 ERROR:  column reference "nome" is ambiguous at character 8
+2019-07-26 16:07:37 -03 STATEMENT:  select nome from projeto p join cordenador c on p.id_projeto = c.id_projeto where p.nome = 'unai'
+2019-07-26 16:12:02 -03 ERROR:  relation "alunocordenador" does not exist at character 96
+2019-07-26 16:12:02 -03 STATEMENT:  select c.nome,ac.id_aluno from projeto p join cordenador c on p.id_projeto = c.id_projeto join alunoCordenador ac on c.id_cord = ac.id_cord where p.nome = 'unai'
+2019-07-26 16:12:45 -03 ERROR:  relation "alunocordenador" does not exist at character 65
+2019-07-26 16:12:45 -03 STATEMENT:  select c.nome,ac.id_aluno from projeto p join cordenador c join alunoCordenador ac on p.id_projeto = c.id_projeto on c.id_cord = ac.id_cord where p.nome = 'unai'
+2019-07-26 16:16:38 -03 ERROR:  relation "alunocordenador" does not exist at character 97
+2019-07-26 16:16:38 -03 STATEMENT:  select c.nome,ac.id_aluno from projeto p join cordenador c  on p.id_projeto = c.id_projeto join alunoCordenador ac on ac.id_cord = c.id_projeto where p.nome = 'unai'
+2019-07-26 16:18:58 -03 ERROR:  relation "alunocordenador" does not exist at character 105
+2019-07-26 16:18:58 -03 STATEMENT:  select c.nome,ac.id_aluno 
+	from projeto p 
+	join cordenador c  
+	on p.id_projeto = c.id_projeto 
+	join alunoCordenador ac 
+	on ac.id_cord = c.id_projeto 
+	where p.nome = 'unai'
+2019-07-26 16:21:03 -03 ERROR:  relation "alunocordenador" does not exist at character 105
+2019-07-26 16:21:03 -03 STATEMENT:  select c.nome,ac.id_aluno 
+	from projeto p 
+	join cordenador c  
+	on p.id_projeto = c.id_projeto 
+	join alunoCordenador ac 
+	on ac.id_cord = c.id_cord 
+	where p.nome = 'unai'
+2019-07-26 16:28:31 -03 ERROR:  relation "alunocordenador" does not exist at character 34
+2019-07-26 16:28:31 -03 STATEMENT:  select c.nome,ac.id_aluno 
+	from alunoCordenador ac ,projeto p 
+	join cordenador c  
+	on p.id_projeto = c.id_projeto  
+	where p.nome = 'unai' and ac.id_cord = c.id_cord
+2019-07-26 16:32:39 -03 ERROR:  relation "alunocordenador" does not exist at character 91
+2019-07-26 16:32:39 -03 STATEMENT:  select id.aluno from projeto p 
+	join cordenador c 
+	on c.id_projeto = p.id_projeto
+	join alunoCordenador ac
+	on ac.id_cord = c.id_cord
+	where p.nome 'unai'
+2019-07-26 16:34:25 -03 ERROR:  relation "alunocordenador" does not exist at character 42
+2019-07-26 16:34:25 -03 STATEMENT:  select id_aluno from cordenador c 
+	join alunoCordenador ac
+	on ac.id_projeto = c.id_projeto
+2019-07-26 16:36:23 -03 ERROR:  relation "alunocordenador" does not exist at character 42
+2019-07-26 16:36:23 -03 STATEMENT:  select id_aluno from cordenador c 
+	join alunoCordenador ac
+	on ac.id_projeto = c.id_projeto
+2019-07-26 16:38:27 -03 ERROR:  there is no unique constraint matching given keys for referenced table "alunoCordenador"
+2019-07-26 16:38:27 -03 STATEMENT:  ALTER TABLE public.cordenador
+	  ADD FOREIGN KEY (id_cord) REFERENCES public."alunoCordenador" (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-26 16:39:09 -03 ERROR:  there is no unique constraint matching given keys for referenced table "alunoCordenador"
+2019-07-26 16:39:09 -03 STATEMENT:  ALTER TABLE public.cordenador
+	  ADD FOREIGN KEY (id_cord) REFERENCES public."alunoCordenador" (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-26 16:39:20 -03 ERROR:  cannot drop constraint cordenador_pkey on table cordenador because other objects depend on it
+2019-07-26 16:39:20 -03 DETAIL:  constraint alunoCordenador_id_cord_fkey on table "alunoCordenador" depends on index cordenador_pkey
+2019-07-26 16:39:20 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-07-26 16:39:20 -03 STATEMENT:  ALTER TABLE public.cordenador
+	  DROP CONSTRAINT cordenador_pkey;
+	ALTER TABLE public.cordenador
+	  ADD FOREIGN KEY (id_cord) REFERENCES public."alunoCordenador" (id_cord) ON UPDATE NO ACTION ON DELETE NO ACTION;
+	
+2019-07-26 16:48:33 -03 ERROR:  relation "alunocordenador" does not exist at character 30
+2019-07-26 16:48:33 -03 STATEMENT:  select id_aluno,id_cord from alunoCordenador
+2019-07-26 16:58:40 -03 ERROR:  column o.id_projeto does not exist at character 59
+2019-07-26 16:58:40 -03 HINT:  Perhaps you meant to reference the column "c.id_projeto".
+2019-07-26 16:58:40 -03 STATEMENT:  select id_aluno from cordenador c 
+	join orientacao o
+	on o.id_projeto = c.id_projeto
+2019-07-26 16:59:37 -03 ERROR:  column o.id_projeto does not exist at character 59
+2019-07-26 16:59:37 -03 HINT:  Perhaps you meant to reference the column "c.id_projeto".
+2019-07-26 16:59:37 -03 STATEMENT:  select id_aluno from cordenador c 
+	join orientacao o
+	on o.id_projeto = c.id_projeto
+	where c.nome = 'flavio'
+2019-07-26 17:01:17 -03 ERROR:  column reference "nome" is ambiguous at character 8
+2019-07-26 17:01:17 -03 STATEMENT:  select nome from cordenador c 
+	join orientacao ori
+	on ori.id_cord = c.id_cord
+	join aluno al
+	on al.id_aluno = ori.id_aluno
+	where c.nome = 'flavio'

@@ -1,0 +1,46 @@
+2019-08-22 10:35:49 -03 ERROR:  column reference "id_aluno" is ambiguous at character 8
+2019-08-22 10:35:49 -03 STATEMENT:  select id_aluno from aluno a 
+	join orientador o 
+	on o.id_aluno = a.id_aluno
+	join coordenador c
+	on c.id_coord = o.id_coord
+	join projeto p
+	on p.id_coord = c.id_coord
+	where p.id_proj = '14'
+2019-08-22 10:40:55 -03 ERROR:  column reference "id_aluno" is ambiguous at character 8
+2019-08-22 10:40:55 -03 STATEMENT:  select id_aluno from aluno a 
+	join orientador o 
+	on o.id_aluno = a.id_aluno
+	join coordenador c
+	on c.id_coord = o.id_coord
+	join projeto p
+	on p.id_coord = c.id_coord
+	where p.id_proj = '10'
+2019-08-22 16:06:29 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_aluno_fkey"
+2019-08-22 16:06:29 -03 DETAIL:  Key (id_aluno)=(0) is not present in table "aluno".
+2019-08-22 16:06:29 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-22 16:12:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 16:19:20 -03 ERROR:  duplicate key value violates unique constraint "orientador_pkey"
+2019-08-22 16:19:20 -03 DETAIL:  Key (id_aluno, id_coord)=(31, 27) already exists.
+2019-08-22 16:19:20 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-22 16:21:00 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 16:25:10 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_aluno_fkey"
+2019-08-22 16:25:10 -03 DETAIL:  Key (id_aluno)=(0) is not present in table "aluno".
+2019-08-22 16:25:10 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-22 16:27:00 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 16:27:41 -03 ERROR:  column "id_nome" does not exist at character 8
+2019-08-22 16:27:41 -03 STATEMENT:  select id_nome from aluno where id_aluno = 'fatima'
+2019-08-22 16:28:00 -03 ERROR:  column "id_nome" does not exist at character 8
+2019-08-22 16:28:00 -03 STATEMENT:  select id_nome from aluno where nome_aluno = 'fatima'
+2019-08-22 16:30:18 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_aluno_fkey"
+2019-08-22 16:30:18 -03 DETAIL:  Key (id_aluno)=(0) is not present in table "aluno".
+2019-08-22 16:30:18 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-22 16:33:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 17:20:11 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 17:20:11 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 17:21:26 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_aluno_fkey"
+2019-08-22 17:21:26 -03 DETAIL:  Key (id_aluno)=(0) is not present in table "aluno".
+2019-08-22 17:21:26 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-22 17:28:46 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 17:38:55 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-22 17:38:55 -03 LOG:  could not receive data from client: unrecognized winsock error 10054

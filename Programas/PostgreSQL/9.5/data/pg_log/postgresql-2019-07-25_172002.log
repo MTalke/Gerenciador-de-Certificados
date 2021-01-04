@@ -1,0 +1,39 @@
+2019-07-25 17:20:03 -03 LOG:  database system was shut down at 2019-07-24 22:19:03 -03
+2019-07-25 17:20:03 -03 FATAL:  the database system is starting up
+2019-07-25 17:20:03 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-07-25 17:20:03 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-07-25 17:20:03 -03 LOG:  autovacuum launcher started
+2019-07-25 21:27:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-25 21:45:24 -03 ERROR:  malformed array literal: "matheus" at character 50
+2019-07-25 21:45:24 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:45:24 -03 STATEMENT:  INSERT INTO public.aluno(nome, id_aluno) VALUES ('matheus'::character varying(40)[], '3'::integer)
+2019-07-25 21:45:28 -03 ERROR:  malformed array literal: "matheus" at character 50
+2019-07-25 21:45:28 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:45:28 -03 STATEMENT:  INSERT INTO public.aluno(nome, id_aluno) VALUES ('matheus'::character varying(40)[], '3'::integer)
+2019-07-25 21:45:45 -03 ERROR:  malformed array literal: "matheus" at character 50
+2019-07-25 21:45:45 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:45:45 -03 STATEMENT:  INSERT INTO public.aluno(nome, id_aluno) VALUES ('matheus'::character varying(40)[], '3'::integer)
+2019-07-25 21:46:24 -03 ERROR:  malformed array literal: "matheus[7]" at character 50
+2019-07-25 21:46:24 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:46:24 -03 STATEMENT:  INSERT INTO public.aluno(nome, id_aluno) VALUES ('matheus[7]'::character varying(40)[], '3'::integer)
+2019-07-25 21:46:49 -03 ERROR:  malformed array literal: "mat" at character 50
+2019-07-25 21:46:49 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:46:49 -03 STATEMENT:  INSERT INTO public.aluno(nome, id_aluno) VALUES ('mat'::character varying(40)[], '3'::integer)
+2019-07-25 21:47:29 -03 ERROR:  malformed array literal: "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm" at character 50
+2019-07-25 21:47:29 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:47:29 -03 STATEMENT:  INSERT INTO public.aluno(nome, id_aluno) VALUES ('mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm'::character varying(40)[], '3'::integer)
+2019-07-25 21:47:55 -03 ERROR:  malformed array literal: "matheus" at character 30
+2019-07-25 21:47:55 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:47:55 -03 STATEMENT:  UPDATE public.aluno SET nome='matheus'::character varying(40)[] WHERE id_aluno = '3'::integer
+2019-07-25 21:48:15 -03 ERROR:  malformed array literal: "matheus{7}" at character 30
+2019-07-25 21:48:15 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:48:15 -03 STATEMENT:  UPDATE public.aluno SET nome='matheus{7}'::character varying(40)[] WHERE id_aluno = '3'::integer
+2019-07-25 21:48:19 -03 ERROR:  malformed array literal: "matheus{7}" at character 30
+2019-07-25 21:48:19 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:48:19 -03 STATEMENT:  UPDATE public.aluno SET nome='matheus{7}'::character varying(40)[] WHERE id_aluno = '3'::integer
+2019-07-25 21:49:49 -03 ERROR:  malformed array literal: "nv" at character 30
+2019-07-25 21:49:49 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:49:49 -03 STATEMENT:  UPDATE public.aluno SET nome='nv'::character varying(40)[] WHERE id_aluno = '3'::integer
+2019-07-25 21:50:07 -03 ERROR:  malformed array literal: "nv" at character 30
+2019-07-25 21:50:07 -03 DETAIL:  Array value must start with "{" or dimension information.
+2019-07-25 21:50:07 -03 STATEMENT:  UPDATE public.aluno SET nome='nv'::character varying(40)[] WHERE id_aluno = '3'::integer

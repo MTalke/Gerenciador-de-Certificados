@@ -1,0 +1,28 @@
+2019-06-03 11:28:33 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:33 -03 LOG:  database system was interrupted; last known up at 2019-06-03 09:34:09 -03
+2019-06-03 11:28:34 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:35 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:36 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:37 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:38 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:39 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:40 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:41 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:42 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:43 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:44 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:45 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:46 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:47 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:48 -03 FATAL:  the database system is starting up
+2019-06-03 11:28:49 -03 LOG:  database system was not properly shut down; automatic recovery in progress
+2019-06-03 11:28:49 -03 LOG:  invalid record length at 0/1871030
+2019-06-03 11:28:49 -03 LOG:  redo is not required
+2019-06-03 11:28:49 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-06-03 11:28:49 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-06-03 11:28:49 -03 LOG:  autovacuum launcher started
+2019-06-03 11:59:01 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-06-03 11:59:01 -03 LOG:  interrompendo quaisquer transações ativas
+2019-06-03 11:59:01 -03 LOG:  autovacuum launcher shutting down
+2019-06-03 11:59:01 -03 LOG:  shutting down
+2019-06-03 11:59:01 -03 LOG:  database system is shut down

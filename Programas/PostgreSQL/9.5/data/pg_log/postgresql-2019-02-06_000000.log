@@ -1,0 +1,18 @@
+2019-02-06 08:43:45 -03 ERROR:  syntax error at or near "where" at character 59
+2019-02-06 08:43:45 -03 STATEMENT:  update medicos set nome = $1,especialidade = $2,crm = $3, where cod_medico = $4 
+2019-02-06 08:45:20 -03 ERROR:  null value in column "especialidade" violates not-null constraint
+2019-02-06 08:45:20 -03 DETAIL:  Failing row contains (14, elementar, null, 123).
+2019-02-06 08:45:20 -03 STATEMENT:   insert into medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-02-06 08:58:34 -03 ERROR:  null value in column "especialidade" violates not-null constraint
+2019-02-06 08:58:34 -03 DETAIL:  Failing row contains (16, flavia maria, null, 1234).
+2019-02-06 08:58:34 -03 STATEMENT:   insert into medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-02-06 09:01:31 -03 ERROR:  type "like" does not exist at character 34
+2019-02-06 09:01:31 -03 STATEMENT:  select from medicos where nome = like'%pedrinho%'
+2019-02-06 09:01:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-06 20:53:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-06 20:53:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-06 21:15:11 -03 WARNING:  worker took too long to start; canceled
+2019-02-06 21:15:12 -03 WARNING:  autovacuum worker started without a worker entry
+2019-02-06 22:02:16 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-06 22:02:20 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-06 22:04:53 -03 LOG:  could not receive data from client: unrecognized winsock error 10054

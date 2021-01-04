@@ -1,0 +1,8 @@
+2019-02-27 14:51:54 -03 ERROR:  column "usuarios" does not exist at character 8
+2019-02-27 14:51:54 -03 STATEMENT:  select usuarios order by usu_nome
+2019-02-27 14:54:13 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-27 14:59:36 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-27 15:00:09 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-27 15:03:07 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-27 15:03:07 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-27 15:21:37 -03 LOG:  could not receive data from client: unrecognized winsock error 10054

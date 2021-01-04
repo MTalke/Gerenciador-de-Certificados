@@ -1,0 +1,157 @@
+2019-08-25 14:11:13 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:11:13 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:12:15 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:12:15 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:24:32 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:24:32 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:29:15 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:29:15 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:33:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:33:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:33:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:33:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:35:09 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:35:09 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:36:36 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:36:36 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:39:23 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:39:23 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:42:35 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:42:35 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:42:35 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:42:35 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 14:44:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:44:33 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 14:57:31 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 14:57:31 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:01:01 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:01:01 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:05:07 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 15:06:43 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:06:43 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:18:00 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:18:00 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:22:16 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:22:16 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:26:20 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 15:27:09 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:27:09 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:28:36 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 15:32:22 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:32:22 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:33:54 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 15:35:49 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 15:36:58 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:36:58 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:39:05 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:39:05 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:39:57 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:39:57 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:43:53 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:43:53 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 15:50:47 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 15:50:47 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 16:03:21 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 16:03:21 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 16:14:46 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-25 16:14:46 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-25 16:16:22 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-25 17:38:17 -03 ERROR:  column proj.nome_proj does not exist at character 572
+2019-08-25 17:38:17 -03 HINT:  Perhaps you meant to reference the column "proj.nome_projeto".
+2019-08-25 17:38:17 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord, proj.nome_projeto,sit.estado 
+				    from orientador ori
+	                            join coordenador coord 
+	                            on coord.id_coord = ori.id_coord 
+	                            join aluno al 
+	                            on al.id_aluno = ori.id_aluno 
+	                            join projeto proj 
+	                            on coord.id_coord = proj.id_proj 
+	                            join situacao sit 
+	                            on sit.id_sit = proj.id_sit  
+	                            where proj.nome_proj like ''
+2019-08-25 17:38:17 -03 ERROR:  column proj.nome_proj does not exist at character 572
+2019-08-25 17:38:17 -03 HINT:  Perhaps you meant to reference the column "proj.nome_projeto".
+2019-08-25 17:38:17 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord, proj.nome_projeto,sit.estado 
+				    from orientador ori
+	                            join coordenador coord 
+	                            on coord.id_coord = ori.id_coord 
+	                            join aluno al 
+	                            on al.id_aluno = ori.id_aluno 
+	                            join projeto proj 
+	                            on coord.id_coord = proj.id_proj 
+	                            join situacao sit 
+	                            on sit.id_sit = proj.id_sit  
+	                            where proj.nome_proj like ''
+2019-08-25 17:38:32 -03 ERROR:  column proj.nome_proj does not exist at character 572
+2019-08-25 17:38:32 -03 HINT:  Perhaps you meant to reference the column "proj.nome_projeto".
+2019-08-25 17:38:32 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord, proj.nome_projeto,sit.estado 
+				    from orientador ori
+	                            join coordenador coord 
+	                            on coord.id_coord = ori.id_coord 
+	                            join aluno al 
+	                            on al.id_aluno = ori.id_aluno 
+	                            join projeto proj 
+	                            on coord.id_coord = proj.id_proj 
+	                            join situacao sit 
+	                            on sit.id_sit = proj.id_sit  
+	                            where proj.nome_proj like 'em'
+2019-08-25 17:38:33 -03 ERROR:  column proj.nome_proj does not exist at character 572
+2019-08-25 17:38:33 -03 HINT:  Perhaps you meant to reference the column "proj.nome_projeto".
+2019-08-25 17:38:33 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord, proj.nome_projeto,sit.estado 
+				    from orientador ori
+	                            join coordenador coord 
+	                            on coord.id_coord = ori.id_coord 
+	                            join aluno al 
+	                            on al.id_aluno = ori.id_aluno 
+	                            join projeto proj 
+	                            on coord.id_coord = proj.id_proj 
+	                            join situacao sit 
+	                            on sit.id_sit = proj.id_sit  
+	                            where proj.nome_proj like 'em'
+2019-08-25 17:40:41 -03 ERROR:  column proj.nome_proj does not exist at character 553
+2019-08-25 17:40:41 -03 HINT:  Perhaps you meant to reference the column "proj.nome_projeto".
+2019-08-25 17:40:41 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord,sit.estado 
+				    from orientador ori
+	                            join coordenador coord 
+	                            on coord.id_coord = ori.id_coord 
+	                            join aluno al 
+	                            on al.id_aluno = ori.id_aluno 
+	                            join projeto proj 
+	                            on coord.id_coord = proj.id_proj 
+	                            join situacao sit 
+	                            on sit.id_sit = proj.id_sit  
+	                            where proj.nome_proj like 'em'
+2019-08-25 17:40:54 -03 ERROR:  column "nome_proj" does not exist at character 553
+2019-08-25 17:40:54 -03 HINT:  Perhaps you meant to reference the column "proj.nome_projeto".
+2019-08-25 17:40:54 -03 STATEMENT:  select al.nome_aluno, coord.nome_coord,sit.estado 
+				    from orientador ori
+	                            join coordenador coord 
+	                            on coord.id_coord = ori.id_coord 
+	                            join aluno al 
+	                            on al.id_aluno = ori.id_aluno 
+	                            join projeto proj 
+	                            on coord.id_coord = proj.id_proj 
+	                            join situacao sit 
+	                            on sit.id_sit = proj.id_sit  
+	                            where nome_proj like 'em'

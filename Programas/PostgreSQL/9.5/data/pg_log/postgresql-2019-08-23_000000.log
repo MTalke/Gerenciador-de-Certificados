@@ -1,0 +1,278 @@
+2019-08-23 09:44:37 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 09:48:41 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_coord_fkey"
+2019-08-23 09:48:41 -03 DETAIL:  Key (id_coord)=(0) is not present in table "coordenador".
+2019-08-23 09:48:41 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-23 09:49:40 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 10:01:58 -03 ERROR:  duplicate key value violates unique constraint "orientador_pkey"
+2019-08-23 10:01:58 -03 DETAIL:  Key (id_aluno, id_coord)=(46, 48) already exists.
+2019-08-23 10:01:58 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-23 10:08:42 -03 ERROR:  duplicate key value violates unique constraint "orientador_pkey"
+2019-08-23 10:08:42 -03 DETAIL:  Key (id_aluno, id_coord)=(51, 50) already exists.
+2019-08-23 10:08:42 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-23 10:10:57 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 10:10:57 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 10:17:16 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:20:55 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-23 11:20:55 -03 DETAIL:  Key (id_coord)=(53) is not present in table "coordenador".
+2019-08-23 11:20:55 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-23 11:29:32 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:30:03 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-23 11:30:03 -03 DETAIL:  Key (id_coord)=(54) is not present in table "coordenador".
+2019-08-23 11:30:03 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-23 11:35:51 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:35:51 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:36:54 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-23 11:36:54 -03 DETAIL:  Key (id_coord)=(55) is not present in table "coordenador".
+2019-08-23 11:36:54 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-23 11:37:58 -03 ERROR:  null value in column "estado" violates not-null constraint
+2019-08-23 11:37:58 -03 DETAIL:  Failing row contains (56, null).
+2019-08-23 11:37:58 -03 STATEMENT:  INSERT INTO public.situacao(id_sit) VALUES ('56'::integer)
+2019-08-23 11:42:08 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-23 11:42:08 -03 DETAIL:  Key (id_coord)=(57) is not present in table "coordenador".
+2019-08-23 11:42:08 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-23 11:42:35 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-23 11:42:35 -03 DETAIL:  Key (id_coord)=(58) is not present in table "coordenador".
+2019-08-23 11:42:35 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-23 11:42:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:42:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:42:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:42:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 11:42:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:41:41 -03 ERROR:  null value in column "estado" violates not-null constraint
+2019-08-23 12:41:41 -03 DETAIL:  Failing row contains (58, null).
+2019-08-23 12:41:41 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15) WHERE id_sit = '58'::integer
+2019-08-23 12:41:52 -03 ERROR:  null value in column "estado" violates not-null constraint
+2019-08-23 12:41:52 -03 DETAIL:  Failing row contains (58, null).
+2019-08-23 12:41:52 -03 STATEMENT:  UPDATE public.situacao SET estado=NULL::character varying(15) WHERE id_sit = '58'::integer
+2019-08-23 12:43:10 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-23 12:43:10 -03 DETAIL:  Key (id_coord)=(59) is not present in table "coordenador".
+2019-08-23 12:43:10 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-23 12:45:02 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_coord_fkey"
+2019-08-23 12:45:02 -03 DETAIL:  Key (id_coord)=(0) is not present in table "coordenador".
+2019-08-23 12:45:02 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-23 12:47:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:47:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:47:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:48:20 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_coord_fkey"
+2019-08-23 12:48:20 -03 DETAIL:  Key (id_coord)=(0) is not present in table "coordenador".
+2019-08-23 12:48:20 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-23 12:51:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:51:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:57:04 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:57:04 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 12:57:04 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 14:25:42 -03 ERROR:  column reference "id_aluno" is ambiguous at character 8
+2019-08-23 14:25:42 -03 STATEMENT:  select id_aluno from aluno a 
+	join orientador o 
+	on o.id_aluno = a.id_aluno
+	join coordenador c
+	on c.id_coord = o.id_coord
+	join projeto p
+	on p.id_coord = c.id_coord
+	where p.id_proj = '63'
+2019-08-23 16:40:12 -03 ERROR:  column reference "id_aluno" is ambiguous at character 8
+2019-08-23 16:40:12 -03 STATEMENT:  select id_aluno from aluno a 
+	join orientador o 
+	on o.id_aluno = a.id_aluno
+	join coordenador c
+	on c.id_coord = o.id_coord
+	join projeto p
+	on p.id_coord = c.id_coord
+	where p.id_proj = '39'
+2019-08-23 16:42:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 8
+2019-08-23 16:42:33 -03 STATEMENT:  select id_aluno from aluno a 
+	join orientador o 
+	on o.id_aluno = a.id_aluno
+	join coordenador c
+	on c.id_coord = o.id_coord
+	join projeto p
+	on p.id_coord = c.id_coord
+	where p.id_proj = '33'
+2019-08-23 16:48:51 -03 ERROR:  syntax error at or near "where" at character 336
+2019-08-23 16:48:51 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	order by coord.nome_coord 
+	where proj.nome_proj like 'canseira'
+	
+2019-08-23 16:49:06 -03 ERROR:  syntax error at or near "where" at character 336
+2019-08-23 16:49:06 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	order by coord.nome_coord 
+	where proj.nome_proj like 'canseira';
+	
+2019-08-23 16:50:06 -03 ERROR:  syntax error at or near "where" at character 305
+2019-08-23 16:50:06 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	order by coord.nome_coord 
+	where proj.nome_proj like 'canseira';
+	
+2019-08-23 16:50:14 -03 ERROR:  syntax error at or near "where" at character 287
+2019-08-23 16:50:14 -03 STATEMENT:  select   al.nome_aluno from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	order by coord.nome_coord 
+	where proj.nome_proj like 'canseira';
+	
+2019-08-23 16:50:15 -03 ERROR:  syntax error at or near "where" at character 287
+2019-08-23 16:50:15 -03 STATEMENT:  select   al.nome_aluno from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	order by coord.nome_coord 
+	where proj.nome_proj like 'canseira';
+	
+2019-08-23 16:52:39 -03 ERROR:  syntax error at or near ")" at character 18
+2019-08-23 16:52:39 -03 STATEMENT:  select   coord.id)coord,al.id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	order by coord.nome_coord 
+	
+2019-08-23 17:14:14 -03 ERROR:  column reference "id_aluno" is ambiguous at character 9
+2019-08-23 17:14:14 -03 STATEMENT:   select id_aluno,nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit where al.nome_aluno = 'djavu' 
+2019-08-23 17:14:39 -03 ERROR:  column reference "id_aluno" is ambiguous at character 9
+2019-08-23 17:14:39 -03 STATEMENT:   select id_aluno,nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit where al.nome_aluno = 'djavu' 
+2019-08-23 17:14:45 -03 ERROR:  column reference "id_aluno" is ambiguous at character 9
+2019-08-23 17:14:45 -03 STATEMENT:   select id_aluno,nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit where al.nome_aluno = 'djavu' 
+2019-08-23 17:14:52 -03 ERROR:  column reference "id_aluno" is ambiguous at character 9
+2019-08-23 17:14:52 -03 STATEMENT:   select id_aluno,nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit where al.nome_aluno = 'wagner fonseca' 
+2019-08-23 17:55:07 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 17:55:55 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 17:55:55 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 17:56:09 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 17:56:09 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 17:57:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 17:58:12 -03 ERROR:  column reference "id_aluno" is ambiguous at character 11
+2019-08-23 17:58:12 -03 STATEMENT:   select   id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by al.id_aluno 
+2019-08-23 17:58:22 -03 ERROR:  column reference "id_aluno" is ambiguous at character 11
+2019-08-23 17:58:22 -03 STATEMENT:   select   id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by al.id_aluno 
+2019-08-23 18:02:24 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 18:02:24 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 18:02:46 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 18:02:46 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 18:03:14 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 18:04:05 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 18:04:05 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 18:04:20 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 18:04:20 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 18:05:58 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 20:17:20 -03 ERROR:  update or delete on table "coordenador" violates foreign key constraint "projeto_id_coord_fkey" on table "projeto"
+2019-08-23 20:17:20 -03 DETAIL:  Key (id_coord)=(1) is still referenced from table "projeto".
+2019-08-23 20:17:20 -03 STATEMENT:  delete from coordenador
+2019-08-23 20:17:26 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-23 20:17:26 -03 DETAIL:  Key (id_sit)=(1) is still referenced from table "projeto".
+2019-08-23 20:17:26 -03 STATEMENT:  delete from situacao
+2019-08-23 20:23:02 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:23:02 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:23:15 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:23:15 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:24:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 20:27:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:27:33 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:27:39 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 20:37:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:37:33 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:37:35 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:37:35 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:37:54 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:37:54 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:38:42 -03 ERROR:  column reference "id_aluno" is ambiguous at character 12
+2019-08-23 20:38:42 -03 STATEMENT:   select    id_aluno,al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit order by coord.nome_coord 
+2019-08-23 20:38:52 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 20:38:52 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 20:42:47 -03 ERROR:  update or delete on table "coordenador" violates foreign key constraint "projeto_id_coord_fkey" on table "projeto"
+2019-08-23 20:42:47 -03 DETAIL:  Key (id_coord)=(70) is still referenced from table "projeto".
+2019-08-23 20:42:47 -03 STATEMENT:  delete from coordenador
+2019-08-23 20:42:49 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-23 20:42:49 -03 DETAIL:  Key (id_sit)=(70) is still referenced from table "projeto".
+2019-08-23 20:42:49 -03 STATEMENT:  delete from situacao
+2019-08-23 20:44:12 -03 ERROR:  relation "orientador_id_coord_seq" does not exist
+2019-08-23 20:44:12 -03 STATEMENT:  ALTER SEQUENCE orientador_id_coord_seq RESTART WITH 1
+	
+2019-08-23 21:55:35 -03 ERROR:  insert or update on table "orientador" violates foreign key constraint "orientador_id_coord_fkey"
+2019-08-23 21:55:35 -03 DETAIL:  Key (id_coord)=(0) is not present in table "coordenador".
+2019-08-23 21:55:35 -03 STATEMENT:   insert into orientador (id_aluno,id_coord) values($1,$2) 
+2019-08-23 21:56:15 -03 ERROR:  null value in column "id_aluno" violates not-null constraint
+2019-08-23 21:56:15 -03 DETAIL:  Failing row contains (null, null).
+2019-08-23 21:56:15 -03 STATEMENT:  UPDATE public.aluno SET id_aluno=NULL::integer, nome_aluno=NULL::character varying(40) WHERE id_aluno = '7'::integer
+2019-08-23 21:57:22 -03 ERROR:  duplicate key value violates unique constraint "aluno_pkey"
+2019-08-23 21:57:22 -03 DETAIL:  Key (id_aluno)=(7) already exists.
+2019-08-23 21:57:22 -03 STATEMENT:   insert into aluno (nome_aluno) values($1) 
+2019-08-23 21:59:17 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 22:01:27 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:01:27 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:01:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:01:33 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:01:40 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-23 22:06:11 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:06:11 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:06:16 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:06:16 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:17:15 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:17:15 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:17:18 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:17:18 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:17:50 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:17:50 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-23 22:17:53 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-23 22:17:53 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  

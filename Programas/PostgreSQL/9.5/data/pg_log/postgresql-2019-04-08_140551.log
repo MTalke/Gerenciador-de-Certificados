@@ -1,0 +1,5 @@
+2019-04-08 14:05:51 -03 FATAL:  the database system is starting up
+2019-04-08 14:05:51 -03 LOG:  database system was shut down at 2019-04-08 09:04:39 -03
+2019-04-08 14:05:52 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-04-08 14:05:52 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-04-08 14:05:52 -03 LOG:  autovacuum launcher started

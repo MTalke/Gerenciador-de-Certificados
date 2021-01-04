@@ -1,0 +1,69 @@
+2019-08-14 09:42:19 -03 ERROR:  column "nome" of relation "cordenador" does not exist at character 26
+2019-08-14 09:42:19 -03 STATEMENT:   insert into cordenador (nome) values($1) 
+2019-08-14 09:42:23 -03 ERROR:  column "nome" of relation "projeto" does not exist at character 23
+2019-08-14 09:42:23 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-14 09:42:32 -03 ERROR:  column "nome" of relation "aluno" does not exist at character 21
+2019-08-14 09:42:32 -03 STATEMENT:   insert into aluno (nome) values($1) 
+2019-08-14 09:42:36 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:42:36 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:42:36 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:43:21 -03 ERROR:  column "nome" of relation "cordenador" does not exist at character 26
+2019-08-14 09:43:21 -03 STATEMENT:   insert into cordenador (nome) values($1) 
+2019-08-14 09:43:22 -03 ERROR:  duplicate key value violates unique constraint "situacao_pkey"
+2019-08-14 09:43:22 -03 DETAIL:  Key (id_sit)=(55) already exists.
+2019-08-14 09:43:22 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 09:43:44 -03 ERROR:  column "nome" of relation "projeto" does not exist at character 23
+2019-08-14 09:43:44 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-14 09:43:55 -03 ERROR:  column "nome" of relation "aluno" does not exist at character 21
+2019-08-14 09:43:55 -03 STATEMENT:   insert into aluno (nome) values($1) 
+2019-08-14 09:44:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:44:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:44:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:44:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:47:34 -03 ERROR:  column "nome" of relation "cordenador" does not exist at character 26
+2019-08-14 09:47:34 -03 STATEMENT:   insert into cordenador (nome) values($1) 
+2019-08-14 09:47:43 -03 ERROR:  duplicate key value violates unique constraint "situacao_pkey"
+2019-08-14 09:47:43 -03 DETAIL:  Key (id_sit)=(56) already exists.
+2019-08-14 09:47:43 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 09:47:50 -03 ERROR:  column "nome" of relation "projeto" does not exist at character 23
+2019-08-14 09:47:50 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-14 09:47:59 -03 ERROR:  column "nome" of relation "aluno" does not exist at character 21
+2019-08-14 09:47:59 -03 STATEMENT:   insert into aluno (nome) values($1) 
+2019-08-14 09:48:06 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:48:06 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:48:06 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:48:06 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:53:22 -03 ERROR:  column "nome" of relation "cordenador" does not exist at character 26
+2019-08-14 09:53:22 -03 STATEMENT:   insert into cordenador (nome) values($1) 
+2019-08-14 09:53:32 -03 ERROR:  duplicate key value violates unique constraint "situacao_pkey"
+2019-08-14 09:53:32 -03 DETAIL:  Key (id_sit)=(57) already exists.
+2019-08-14 09:53:32 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 09:54:26 -03 ERROR:  column "nome" of relation "projeto" does not exist at character 23
+2019-08-14 09:54:26 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-14 09:55:17 -03 ERROR:  column "nome" of relation "aluno" does not exist at character 21
+2019-08-14 09:55:17 -03 STATEMENT:   insert into aluno (nome) values($1) 
+2019-08-14 09:55:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:55:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:55:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:55:56 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:56:31 -03 ERROR:  column "nome" of relation "cordenador" does not exist at character 26
+2019-08-14 09:56:31 -03 STATEMENT:   insert into cordenador (nome) values($1) 
+2019-08-14 09:56:34 -03 ERROR:  column "nome" of relation "projeto" does not exist at character 23
+2019-08-14 09:56:34 -03 STATEMENT:   insert into projeto (nome) values ($1) 
+2019-08-14 09:56:53 -03 ERROR:  column "nome" of relation "aluno" does not exist at character 21
+2019-08-14 09:56:53 -03 STATEMENT:   insert into aluno (nome) values($1) 
+2019-08-14 09:56:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:56:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 09:56:59 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 10:32:43 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 11:31:21 -03 ERROR:  syntax error at or near "from" at character 82
+2019-08-14 11:31:21 -03 STATEMENT:   select order by  al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori join cordenador coord on coord.id_cord = ori.id_cord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_cord = proj.id_projeto join situacao sit on sit.id_sit = proj.id_sit where coord.id_cord = al.id_aluno 
+2019-08-14 11:31:26 -03 ERROR:  syntax error at or near "from" at character 82
+2019-08-14 11:31:26 -03 STATEMENT:   select order by  al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori join cordenador coord on coord.id_cord = ori.id_cord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_cord = proj.id_projeto join situacao sit on sit.id_sit = proj.id_sit where coord.id_cord = al.id_aluno 
+2019-08-14 11:55:00 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-14 11:55:01 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-14 11:55:01 -03 LOG:  autovacuum launcher shutting down
+2019-08-14 11:55:06 -03 LOG:  shutting down
+2019-08-14 11:55:06 -03 LOG:  database system is shut down

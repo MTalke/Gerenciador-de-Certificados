@@ -1,0 +1,55 @@
+2019-07-29 20:38:40 -03 ERROR:  invalid input syntax for type date: "24/05" at character 110
+2019-07-29 20:38:40 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, data, estado) VALUES ('2018'::integer, '1001'::integer, '24/05'::date, 'entregue'::character varying(15))
+2019-07-29 20:38:53 -03 ERROR:  invalid input syntax for type date: "24/05" at character 110
+2019-07-29 20:38:53 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, data, estado) VALUES ('2018'::integer, '1001'::integer, '24/05'::date, ''::character varying(15))
+2019-07-29 20:39:09 -03 ERROR:  invalid input syntax for type date: "24,05" at character 110
+2019-07-29 20:39:09 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, data, estado) VALUES ('2018'::integer, '1001'::integer, '24,05'::date, ''::character varying(15))
+2019-07-29 20:43:32 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:43:32 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:43:32 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1002'::integer, 'nÃ£o entregue'::character varying(15))
+2019-07-29 20:43:44 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:43:44 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:43:44 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1002'::integer, 'nÃ£o entregue'::character varying(15))
+2019-07-29 20:43:56 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:43:56 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:43:56 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1002'::integer, 'nao entregue'::character varying(15))
+2019-07-29 20:44:07 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:44:07 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:44:07 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1002'::integer, 'nao entregue'::character varying(15))
+2019-07-29 20:44:15 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:44:15 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:44:15 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1012'::integer, 'nao entregue'::character varying(15))
+2019-07-29 20:44:42 -03 ERROR:  invalid input syntax for type date: "12/-3/2019" at character 110
+2019-07-29 20:44:42 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, data, estado) VALUES ('2019'::integer, '1012'::integer, '12/-3/2019'::date, 'nao entregue'::character varying(15))
+2019-07-29 20:44:52 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:44:52 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:44:52 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, data, estado) VALUES ('2019'::integer, '1012'::integer, '12/3/2019'::date, 'nao entregue'::character varying(15))
+2019-07-29 20:45:01 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:45:01 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:45:01 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1012'::integer, 'naoentregue'::character varying(15))
+2019-07-29 20:45:50 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:45:50 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:45:50 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1012'::integer, 'naoentregue'::character varying(15))
+2019-07-29 20:45:53 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:45:53 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:45:53 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1012'::integer, 'naoentregue'::character varying(15))
+2019-07-29 20:45:57 -03 ERROR:  insert or update on table "situacao" violates foreign key constraint "situacao_id_projeto_fkey"
+2019-07-29 20:45:57 -03 DETAIL:  Key (id_projeto)=(2019) is not present in table "projeto".
+2019-07-29 20:45:57 -03 STATEMENT:  INSERT INTO public.situacao(id_projeto, id_situacao, estado) VALUES ('2019'::integer, '1012'::integer, 'naoentregue'::character varying(15))
+2019-07-29 22:14:51 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:24:13 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:26:28 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:31:07 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:32:41 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:35:09 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:39:50 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:41:09 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:42:00 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:42:00 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:42:02 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:42:04 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-29 22:44:37 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-07-29 22:44:37 -03 LOG:  interrompendo quaisquer transações ativas
+2019-07-29 22:44:38 -03 LOG:  autovacuum launcher shutting down
+2019-07-29 22:44:40 -03 LOG:  shutting down
+2019-07-29 22:44:40 -03 LOG:  database system is shut down

@@ -1,0 +1,19 @@
+2019-02-16 20:33:00 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-16 20:33:00 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-16 20:33:15 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-16 20:35:10 -03 ERROR:  column "carin" does not exist at character 39
+2019-02-16 20:35:10 -03 STATEMENT:  select from usuarios where usu_nome = carin;
+2019-02-16 20:36:59 -03 ERROR:  column "c" does not exist at character 39
+2019-02-16 20:36:59 -03 STATEMENT:  select from usuarios where usu_nome = c;
+2019-02-16 20:37:45 -03 ERROR:  column "c" does not exist at character 48
+2019-02-16 20:37:45 -03 STATEMENT:  select usu_nome from usuarios where usu_nome = c;
+2019-02-16 20:37:56 -03 ERROR:  column "c" does not exist at character 49
+2019-02-16 20:37:56 -03 STATEMENT:  select usu_nome from usuarios where usu_nome == c;
+2019-02-16 20:41:39 -03 ERROR:  syntax error at or near "select" at character 8
+2019-02-16 20:41:39 -03 STATEMENT:  select select from usuarios where usu_nome from usuarios where usu_nome like'%carin%'
+2019-02-16 20:42:04 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-16 20:42:19 -03 ERROR:  syntax error at or near "from" at character 38
+2019-02-16 20:42:19 -03 STATEMENT:  select  from usuarios where usu_nome from usuarios where usu_nome like'%carin%'
+2019-02-16 20:42:24 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-16 20:43:46 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-16 20:47:32 -03 LOG:  could not receive data from client: unrecognized winsock error 10054

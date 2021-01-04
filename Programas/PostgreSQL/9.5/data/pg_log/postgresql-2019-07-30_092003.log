@@ -1,0 +1,45 @@
+2019-07-30 09:20:03 -03 LOG:  database system was shut down at 2019-07-29 22:44:40 -03
+2019-07-30 09:20:03 -03 FATAL:  the database system is starting up
+2019-07-30 09:20:04 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-07-30 09:20:04 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-07-30 09:20:04 -03 LOG:  autovacuum launcher started
+2019-07-30 10:21:07 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:21:48 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:25:54 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:32:30 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:34:40 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:35:09 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:35:43 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:36:35 -03 ERROR:  schema "p" does not exist at character 91
+2019-07-30 10:36:35 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome '%unai%' 
+2019-07-30 10:36:51 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:43:12 -03 ERROR:  schema "p" does not exist at character 91
+2019-07-30 10:43:12 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome '%unai%' 
+2019-07-30 10:43:29 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 10:46:32 -03 ERROR:  syntax error at or near "select" at character 108
+2019-07-30 10:46:32 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome = 'unai'
+	select estado from situacao where id_projeto = 2018
+2019-07-30 10:47:16 -03 ERROR:  syntax error at or near "select" at character 108
+2019-07-30 10:47:16 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome = 'unai'
+	select estado from situacao where id_projeto = '2018'
+2019-07-30 10:48:15 -03 ERROR:  syntax error at or near "select" at character 108
+2019-07-30 10:48:15 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome = 'unai'
+	select estado from situacao 
+2019-07-30 10:49:16 -03 ERROR:  syntax error at or near "select" at character 108
+2019-07-30 10:49:16 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome = 'unai'
+	select nome from projeto
+2019-07-30 11:33:58 -03 ERROR:  schema "p" does not exist at character 91
+2019-07-30 11:33:58 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome '%unai%' 
+2019-07-30 11:34:09 -03 ERROR:  schema "p" does not exist at character 91
+2019-07-30 11:34:09 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome '%2018%' 
+2019-07-30 11:34:25 -03 ERROR:  schema "p" does not exist at character 91
+2019-07-30 11:34:25 -03 STATEMENT:  select sit.estado from projeto p join situacao sit on p.id_projeto = sit.id_projeto where p.nome '%%' 
+2019-07-30 11:34:33 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 11:34:33 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 11:34:33 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 12:06:13 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-07-30 12:07:10 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-07-30 12:07:11 -03 LOG:  interrompendo quaisquer transações ativas
+2019-07-30 12:07:11 -03 LOG:  autovacuum launcher shutting down
+2019-07-30 12:07:13 -03 LOG:  shutting down
+2019-07-30 12:07:15 -03 LOG:  database system is shut down

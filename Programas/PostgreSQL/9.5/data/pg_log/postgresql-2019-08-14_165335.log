@@ -1,0 +1,225 @@
+2019-08-14 16:53:35 -03 LOG:  database system was shut down at 2019-08-14 11:55:06 -03
+2019-08-14 16:53:35 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-08-14 16:53:35 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-08-14 16:53:35 -03 LOG:  autovacuum launcher started
+2019-08-14 18:27:52 -03 ERROR:  update or delete on table "cordenador" violates foreign key constraint "projeto_id_cord_fkey" on table "projeto"
+2019-08-14 18:27:52 -03 DETAIL:  Key (id_cord)=(81) is still referenced from table "projeto".
+2019-08-14 18:27:52 -03 STATEMENT:  DELETE FROM public.cordenador WHERE id_cord = '81'::integer
+2019-08-14 18:28:01 -03 ERROR:  update or delete on table "cordenador" violates foreign key constraint "projeto_id_cord_fkey" on table "projeto"
+2019-08-14 18:28:01 -03 DETAIL:  Key (id_cord)=(81) is still referenced from table "projeto".
+2019-08-14 18:28:01 -03 STATEMENT:  DELETE FROM public.cordenador WHERE id_cord = '81'::integer
+2019-08-14 18:30:40 -03 ERROR:  update or delete on table "cordenador" violates foreign key constraint "projeto_id_cord_fkey" on table "projeto"
+2019-08-14 18:30:40 -03 DETAIL:  Key (id_cord)=(72) is still referenced from table "projeto".
+2019-08-14 18:30:40 -03 STATEMENT:  DELETE FROM public.cordenador WHERE id_cord = '72'::integer
+2019-08-14 18:31:12 -03 ERROR:  update or delete on table "cordenador" violates foreign key constraint "projeto_id_cord_fkey" on table "projeto"
+2019-08-14 18:31:12 -03 DETAIL:  Key (id_cord)=(72) is still referenced from table "projeto".
+2019-08-14 18:31:12 -03 STATEMENT:  DELETE FROM public.cordenador WHERE id_cord = '72'::integer
+2019-08-14 18:32:14 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-14 18:32:14 -03 DETAIL:  Key (id_sit)=(72) is still referenced from table "projeto".
+2019-08-14 18:32:14 -03 STATEMENT:  DELETE FROM public.situacao WHERE id_sit = '72'::integer
+2019-08-14 18:38:17 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-14 18:38:17 -03 DETAIL:  Key (id_aluno)=(72) is not present in table "aluno".
+2019-08-14 18:38:17 -03 STATEMENT:   insert into orientacao (data) values($1) 
+2019-08-14 18:40:58 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 18:44:51 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-14 18:44:51 -03 DETAIL:  Key (id_aluno)=(73) is not present in table "aluno".
+2019-08-14 18:44:51 -03 STATEMENT:   insert into orientacao (data) values($1) 
+2019-08-14 18:45:03 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 18:46:11 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-14 18:46:11 -03 DETAIL:  Key (id_aluno)=(74) is not present in table "aluno".
+2019-08-14 18:46:11 -03 STATEMENT:   insert into orientacao (data) values($1) 
+2019-08-14 18:46:14 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-14 18:46:14 -03 DETAIL:  Key (id_sit)=(82) is not present in table "situacao".
+2019-08-14 18:46:14 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 18:46:33 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 18:46:33 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 18:48:30 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-14 18:48:30 -03 DETAIL:  Key (id_aluno)=(75) is not present in table "aluno".
+2019-08-14 18:48:30 -03 STATEMENT:   insert into orientacao (data) values($1) 
+2019-08-14 18:48:31 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-14 18:48:31 -03 DETAIL:  Key (id_sit)=(83) is not present in table "situacao".
+2019-08-14 18:48:31 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 18:54:05 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 18:54:05 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 18:54:20 -03 ERROR:  cannot truncate a table referenced in a foreign key constraint
+2019-08-14 18:54:20 -03 DETAIL:  Table "orientacao" references "aluno".
+2019-08-14 18:54:20 -03 HINT:  Truncate table "orientacao" at the same time, or use TRUNCATE ... CASCADE.
+2019-08-14 18:54:20 -03 STATEMENT:  TRUNCATE TABLE aluno
+	RESTART IDENTITY;
+2019-08-14 18:54:56 -03 ERROR:  cannot truncate a table referenced in a foreign key constraint
+2019-08-14 18:54:56 -03 DETAIL:  Table "projeto" references "situacao".
+2019-08-14 18:54:56 -03 HINT:  Truncate table "projeto" at the same time, or use TRUNCATE ... CASCADE.
+2019-08-14 18:54:56 -03 STATEMENT:  TRUNCATE TABLE situacao
+	RESTART IDENTITY;
+2019-08-14 18:55:32 -03 ERROR:  cannot truncate a table referenced in a foreign key constraint
+2019-08-14 18:55:32 -03 DETAIL:  Table "orientacao" references "cordenador".
+2019-08-14 18:55:32 -03 HINT:  Truncate table "orientacao" at the same time, or use TRUNCATE ... CASCADE.
+2019-08-14 18:55:32 -03 STATEMENT:  TRUNCATE TABLE cordenador
+	RESTART IDENTITY;
+2019-08-14 18:55:57 -03 ERROR:  syntax error at or near "TABLE" at character 18
+2019-08-14 18:55:57 -03 STATEMENT:  TRUNCATE cascade TABLE cordenador
+	RESTART IDENTITY;
+2019-08-14 18:56:17 -03 ERROR:  syntax error at or near "TABLE" at character 18
+2019-08-14 18:56:17 -03 STATEMENT:  TRUNCATE CASCADE TABLE cordenador
+	RESTART IDENTITY;
+2019-08-14 18:56:23 -03 ERROR:  syntax error at or near "cordenador" at character 18
+2019-08-14 18:56:23 -03 STATEMENT:  TRUNCATE CASCADE cordenador
+	RESTART IDENTITY;
+2019-08-14 18:58:04 -03 ERROR:  cannot truncate a table referenced in a foreign key constraint
+2019-08-14 18:58:04 -03 DETAIL:  Table "orientacao" references "cordenador".
+2019-08-14 18:58:04 -03 HINT:  Truncate table "orientacao" at the same time, or use TRUNCATE ... CASCADE.
+2019-08-14 18:58:04 -03 STATEMENT:  TRUNCATE table cordenador
+	RESTART IDENTITY;
+2019-08-14 18:58:28 -03 ERROR:  syntax error at or near "CASCADE" at character 1
+2019-08-14 18:58:28 -03 STATEMENT:  CASCADE table cordenador
+	RESTART IDENTITY;
+2019-08-14 19:02:34 -03 ERROR:  "cordenador" is not a sequence
+2019-08-14 19:02:34 -03 STATEMENT:  ALTER SEQUENCE cordenador RESTART WITH 1;
+	
+2019-08-14 19:03:46 -03 ERROR:  syntax error at or near "AUTO_INCREMENT" at character 24
+2019-08-14 19:03:46 -03 STATEMENT:  alter table cordenador AUTO_INCREMENT = 1;
+	
+2019-08-14 19:05:58 -03 ERROR:  sequence "serial" does not exist
+2019-08-14 19:05:58 -03 STATEMENT:  DROP SEQUENCE serial;
+	
+2019-08-14 19:06:10 -03 ERROR:  "cordenador" is not a sequence
+2019-08-14 19:06:10 -03 HINT:  Use DROP TABLE to remove a table.
+2019-08-14 19:06:10 -03 STATEMENT:  DROP SEQUENCE cordenador;
+	
+2019-08-14 19:14:33 -03 ERROR:  syntax error at or near "AUTO_INCREMENT" at character 45
+2019-08-14 19:14:33 -03 STATEMENT:  delete from situacao;
+	alter table situacao AUTO_INCREMENT = 1;
+2019-08-14 19:17:05 -03 ERROR:  relation "id_sit" does not exist
+2019-08-14 19:17:05 -03 STATEMENT:  ALTER SEQUENCE id_sit RESTART WITH 1;
+	
+2019-08-14 19:24:53 -03 ERROR:  column "id_aluno" of relation "projeto" does not exist
+2019-08-14 19:24:53 -03 STATEMENT:  ALTER TABLE projeto ALTER COLUMN id_aluno SET DEFAULT NULL;
+2019-08-14 19:26:57 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-14 19:26:57 -03 DETAIL:  Failing row contains (Sim, null).
+2019-08-14 19:26:57 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 19:27:09 -03 ERROR:  null value in column "id_aluno" violates not-null constraint
+2019-08-14 19:27:09 -03 DETAIL:  Failing row contains (renata, null).
+2019-08-14 19:27:09 -03 STATEMENT:   insert into aluno (nome_aluno) values($1) 
+2019-08-14 19:27:11 -03 ERROR:  null value in column "id_cord" violates not-null constraint
+2019-08-14 19:27:11 -03 DETAIL:  Failing row contains (null, ivana).
+2019-08-14 19:27:11 -03 STATEMENT:   insert into cordenador (nome_coord) values($1) 
+2019-08-14 19:27:11 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-14 19:27:11 -03 DETAIL:  Key (id_sit)=(1) is not present in table "situacao".
+2019-08-14 19:27:11 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 19:28:27 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:28:27 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:28:27 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:28:27 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:30:02 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-14 19:30:02 -03 DETAIL:  Failing row contains (Sim, null).
+2019-08-14 19:30:02 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 19:31:32 -03 ERROR:  null value in column "id_aluno" violates not-null constraint
+2019-08-14 19:31:32 -03 DETAIL:  Failing row contains (wwww, null).
+2019-08-14 19:31:32 -03 STATEMENT:   insert into aluno (nome_aluno) values($1) 
+2019-08-14 19:31:35 -03 ERROR:  null value in column "id_cord" violates not-null constraint
+2019-08-14 19:31:35 -03 DETAIL:  Failing row contains (null, eeee).
+2019-08-14 19:31:35 -03 STATEMENT:   insert into cordenador (nome_coord) values($1) 
+2019-08-14 19:31:35 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-14 19:31:35 -03 DETAIL:  Key (id_sit)=(2) is not present in table "situacao".
+2019-08-14 19:31:35 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 19:31:57 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:31:57 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:31:57 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:31:57 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 19:33:05 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-14 19:33:05 -03 DETAIL:  Failing row contains (NÃ£o, null).
+2019-08-14 19:33:05 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 19:33:23 -03 ERROR:  null value in column "id_aluno" violates not-null constraint
+2019-08-14 19:33:23 -03 DETAIL:  Failing row contains (yeye, null).
+2019-08-14 19:33:23 -03 STATEMENT:   insert into aluno (nome_aluno) values($1) 
+2019-08-14 19:33:25 -03 ERROR:  null value in column "id_cord" violates not-null constraint
+2019-08-14 19:33:25 -03 DETAIL:  Failing row contains (null, mat).
+2019-08-14 19:33:25 -03 STATEMENT:   insert into cordenador (nome_coord) values($1) 
+2019-08-14 19:33:25 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_cord_fkey"
+2019-08-14 19:33:25 -03 DETAIL:  Key (id_cord)=(3) is not present in table "cordenador".
+2019-08-14 19:33:25 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 19:38:31 -03 ERROR:  column "vazio" does not exist at character 38
+2019-08-14 19:38:31 -03 STATEMENT:  insert into situacao (estado) values(vazio)
+2019-08-14 19:38:38 -03 ERROR:  null value in column "id_sit" violates not-null constraint
+2019-08-14 19:38:38 -03 DETAIL:  Failing row contains (vazio, null).
+2019-08-14 19:38:38 -03 STATEMENT:  insert into situacao (estado) values('vazio')
+2019-08-14 19:39:40 -03 ERROR:  cannot drop table situacao column id_sit because other objects depend on it
+2019-08-14 19:39:40 -03 DETAIL:  constraint projeto_id_sit_fkey on table projeto depends on table situacao column id_sit
+2019-08-14 19:39:40 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-08-14 19:39:40 -03 STATEMENT:  ALTER TABLE public.situacao DROP COLUMN id_sit
+2019-08-14 19:56:55 -03 ERROR:  cannot drop table situacao column id_sit because other objects depend on it
+2019-08-14 19:56:55 -03 DETAIL:  constraint projeto_id_sit_fkey on table projeto depends on table situacao column id_sit
+2019-08-14 19:56:55 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-08-14 19:56:55 -03 STATEMENT:  ALTER TABLE public.situacao DROP COLUMN id_sit
+2019-08-14 19:57:18 -03 ERROR:  cannot drop table situacao column id_sit because other objects depend on it
+2019-08-14 19:57:18 -03 DETAIL:  constraint projeto_id_sit_fkey on table projeto depends on table situacao column id_sit
+2019-08-14 19:57:18 -03 HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2019-08-14 19:57:18 -03 STATEMENT:  ALTER TABLE public.situacao DROP COLUMN id_sit
+2019-08-14 20:13:38 -03 ERROR:  insert or update on table "orientacao" violates foreign key constraint "orientacao_id_aluno_fkey"
+2019-08-14 20:13:38 -03 DETAIL:  Key (id_aluno)=(1) is not present in table "aluno".
+2019-08-14 20:13:38 -03 STATEMENT:  INSERT INTO public.orientacao(id_cord, id_aluno) VALUES ('1'::integer, '1'::integer)
+2019-08-14 20:14:47 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_sit_fkey"
+2019-08-14 20:14:47 -03 DETAIL:  Key (id_sit)=(1) is not present in table "situacao".
+2019-08-14 20:14:47 -03 STATEMENT:  INSERT INTO public.projeto(id_projeto, nome_projeto, id_sit, id_cord) VALUES ('1'::integer, 'asas'::character varying(60), '1'::integer, '1'::integer)
+2019-08-14 20:15:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:15:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:15:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:15:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:16:28 -03 ERROR:  duplicate key value violates unique constraint "situacao_pkey"
+2019-08-14 20:16:28 -03 DETAIL:  Key (id_sit)=(1) already exists.
+2019-08-14 20:16:28 -03 STATEMENT:   insert into situacao (estado) values($1) 
+2019-08-14 20:16:43 -03 ERROR:  null value in column "id_aluno" violates not-null constraint
+2019-08-14 20:16:43 -03 DETAIL:  Failing row contains (cccc, null).
+2019-08-14 20:16:43 -03 STATEMENT:   insert into aluno (nome_aluno) values($1) 
+2019-08-14 20:16:45 -03 ERROR:  null value in column "id_cord" violates not-null constraint
+2019-08-14 20:16:45 -03 DETAIL:  Failing row contains (null, bbbb).
+2019-08-14 20:16:45 -03 STATEMENT:   insert into cordenador (nome_coord) values($1) 
+2019-08-14 20:16:46 -03 ERROR:  duplicate key value violates unique constraint "projeto_pkey"
+2019-08-14 20:16:46 -03 DETAIL:  Key (id_projeto, id_sit, id_cord)=(1, 1, 1) already exists.
+2019-08-14 20:16:46 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 20:17:03 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:17:03 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:17:03 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:17:03 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:17:18 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-14 20:17:18 -03 DETAIL:  Key (id_sit)=(1) is still referenced from table "projeto".
+2019-08-14 20:17:18 -03 STATEMENT:  DELETE FROM public.situacao WHERE id_sit = '1'::integer
+2019-08-14 20:19:07 -03 ERROR:  null value in column "id_aluno" violates not-null constraint
+2019-08-14 20:19:07 -03 DETAIL:  Failing row contains (math, null).
+2019-08-14 20:19:07 -03 STATEMENT:   insert into aluno (nome_aluno) values($1) 
+2019-08-14 20:19:10 -03 ERROR:  null value in column "id_cord" violates not-null constraint
+2019-08-14 20:19:10 -03 DETAIL:  Failing row contains (null, bete).
+2019-08-14 20:19:10 -03 STATEMENT:   insert into cordenador (nome_coord) values($1) 
+2019-08-14 20:19:11 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_cord_fkey"
+2019-08-14 20:19:11 -03 DETAIL:  Key (id_cord)=(2) is not present in table "cordenador".
+2019-08-14 20:19:11 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-14 20:37:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:37:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:37:45 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-14 20:49:25 -03 ERROR:  column coord.id_cord does not exist at character 118
+2019-08-14 20:49:25 -03 HINT:  Perhaps you meant to reference the column "coord.id_coord".
+2019-08-14 20:49:25 -03 STATEMENT:  select  al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori join coordenador coord on coord.id_cord = ori.id_cord join aluno al
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_projeto join situacao sit on sit.id_sit = proj.id_sit where coord.id_coord = al.id_aluno
+2019-08-14 20:49:52 -03 ERROR:  column proj.id_projeto does not exist at character 231
+2019-08-14 20:49:52 -03 HINT:  Perhaps you meant to reference the column "proj.id_proj".
+2019-08-14 20:49:52 -03 STATEMENT:  select  al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientacao ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_projeto join situacao sit on sit.id_sit = proj.id_sit where coord.id_coord = al.id_aluno
+2019-08-14 21:26:59 -03 ERROR:  syntax error at or near "on" at character 309
+2019-08-14 21:26:59 -03 STATEMENT:  select   al.nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado 
+	from orientacao ori 
+	join coordenador coord 
+	on coord.id_coord = ori.id_coord 
+	join aluno al 
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj
+	on coord.id_coord = proj.id_proj 
+	join situacao sit 
+	on sit.id_sit = proj.id_sit 
+	on coord.id_coord = al.id_aluno 
+	where coord.nome_coord = 'maria lucia'
+	
+2019-08-14 22:18:25 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-14 22:18:26 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-14 22:18:26 -03 LOG:  autovacuum launcher shutting down
+2019-08-14 22:18:30 -03 LOG:  shutting down
+2019-08-14 22:18:30 -03 LOG:  database system is shut down

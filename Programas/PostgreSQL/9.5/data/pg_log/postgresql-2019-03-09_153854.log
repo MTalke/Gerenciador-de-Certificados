@@ -1,0 +1,49 @@
+2019-03-09 15:38:54 -03 LOG:  database system was interrupted; last known up at 2019-02-27 16:14:18 -03
+2019-03-09 15:38:55 -03 FATAL:  the database system is starting up
+2019-03-09 15:38:56 -03 FATAL:  the database system is starting up
+2019-03-09 15:38:57 -03 FATAL:  the database system is starting up
+2019-03-09 15:38:58 -03 FATAL:  the database system is starting up
+2019-03-09 15:38:59 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:00 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:01 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:02 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:03 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:04 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:05 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:06 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:07 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:08 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:09 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:10 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:11 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:12 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:13 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:14 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:15 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:16 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:17 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:18 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:19 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:20 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:21 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:22 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:23 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:24 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:25 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:26 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:27 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:28 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:29 -03 FATAL:  the database system is starting up
+2019-03-09 15:39:30 -03 LOG:  database system was not properly shut down; automatic recovery in progress
+2019-03-09 15:39:30 -03 LOG:  invalid record length at 0/1870070
+2019-03-09 15:39:30 -03 LOG:  redo is not required
+2019-03-09 15:39:30 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-03-09 15:39:30 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-03-09 15:39:30 -03 LOG:  autovacuum launcher started
+2019-03-09 22:37:41 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-03-09 22:37:41 -03 LOG:  interrompendo quaisquer transações ativas
+2019-03-09 22:37:41 -03 LOG:  autovacuum launcher shutting down
+2019-03-09 22:37:41 -03 ERROR:  canceling statement due to user request
+2019-03-09 22:37:41 -03 LOG:  autovacuum launcher shutting down
+2019-03-09 22:37:41 -03 LOG:  shutting down
+2019-03-09 22:37:44 -03 LOG:  database system is shut down

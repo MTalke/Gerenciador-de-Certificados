@@ -1,0 +1,175 @@
+2019-08-24 19:20:12 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:20:12 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:20:26 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:20:26 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:21:24 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:21:24 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:21:26 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:21:26 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:27:26 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:29:05 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:46:19 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-24 19:46:19 -03 DETAIL:  Key (id_sit)=(12) is still referenced from table "projeto".
+2019-08-24 19:46:19 -03 STATEMENT:  DELETE FROM public.situacao WHERE id_sit = '12'::integer
+2019-08-24 19:50:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:50:33 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:50:36 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:50:36 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:51:13 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-24 19:51:13 -03 DETAIL:  Key (id_sit)=(3) is still referenced from table "projeto".
+2019-08-24 19:51:13 -03 STATEMENT:  DELETE FROM public.situacao WHERE id_sit = '3'::integer
+2019-08-24 19:51:17 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-24 19:51:17 -03 DETAIL:  Key (id_sit)=(2) is still referenced from table "projeto".
+2019-08-24 19:51:17 -03 STATEMENT:  DELETE FROM public.situacao WHERE id_sit = '2'::integer
+2019-08-24 19:51:18 -03 ERROR:  update or delete on table "situacao" violates foreign key constraint "projeto_id_sit_fkey" on table "projeto"
+2019-08-24 19:51:18 -03 DETAIL:  Key (id_sit)=(1) is still referenced from table "projeto".
+2019-08-24 19:51:18 -03 STATEMENT:  DELETE FROM public.situacao WHERE id_sit = '1'::integer
+2019-08-24 19:51:32 -03 ERROR:  update or delete on table "aluno" violates foreign key constraint "orientador_id_aluno_fkey" on table "orientador"
+2019-08-24 19:51:32 -03 DETAIL:  Key (id_aluno)=(11) is still referenced from table "orientador".
+2019-08-24 19:51:32 -03 STATEMENT:  DELETE FROM public.aluno WHERE id_aluno = '11'::integer
+2019-08-24 19:51:44 -03 ERROR:  update or delete on table "aluno" violates foreign key constraint "orientador_id_aluno_fkey" on table "orientador"
+2019-08-24 19:51:44 -03 DETAIL:  Key (id_aluno)=(11) is still referenced from table "orientador".
+2019-08-24 19:51:44 -03 STATEMENT:  DELETE FROM public.aluno WHERE id_aluno = '11'::integer
+2019-08-24 19:53:33 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:53:33 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:53:47 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:53:47 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:54:19 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:54:19 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:54:22 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 19:54:22 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 19:54:44 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 19:58:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 20:05:09 -03 ERROR:  syntax error at or near "ALTER" at character 53
+2019-08-24 20:05:09 -03 STATEMENT:  ALTER SEQUENCE aluno_id_aluno_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_coord_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_proj_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE sit_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE coordenador_id_coord_seq RESTART WITH 1
+2019-08-24 20:05:34 -03 ERROR:  syntax error at or near "ALTER" at character 55
+2019-08-24 20:05:34 -03 STATEMENT:  ALTER SEQUENCE aluno_id_aluno_seq RESTART WITH 1
+	
+	
+	ALTER SEQUENCE sit_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_coord_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_proj_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE coordenador_id_coord_seq RESTART WITH 1
+2019-08-24 20:05:55 -03 ERROR:  syntax error at or near "ALTER" at character 53
+2019-08-24 20:05:55 -03 STATEMENT:  
+	
+	ALTER SEQUENCE sit_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_coord_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_proj_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE coordenador_id_coord_seq RESTART WITH 1
+2019-08-24 20:06:01 -03 ERROR:  syntax error at or near "ALTER" at character 61
+2019-08-24 20:06:01 -03 STATEMENT:  
+	
+	
+	ALTER SEQUENCE projeto_id_coord_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_proj_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE coordenador_id_coord_seq RESTART WITH 1
+2019-08-24 20:06:07 -03 ERROR:  syntax error at or near "ALTER" at character 62
+2019-08-24 20:06:07 -03 STATEMENT:  
+	
+	
+	
+	ALTER SEQUENCE projeto_id_proj_seq RESTART WITH 1
+	
+	ALTER SEQUENCE projeto_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE coordenador_id_coord_seq RESTART WITH 1
+2019-08-24 20:06:13 -03 ERROR:  syntax error at or near "ALTER" at character 63
+2019-08-24 20:06:13 -03 STATEMENT:  
+	
+	
+	
+	
+	ALTER SEQUENCE projeto_id_sit_seq RESTART WITH 1
+	
+	ALTER SEQUENCE coordenador_id_coord_seq RESTART WITH 1
+2019-08-24 20:07:00 -03 ERROR:  update or delete on table "aluno" violates foreign key constraint "orientador_id_aluno_fkey" on table "orientador"
+2019-08-24 20:07:00 -03 DETAIL:  Key (id_aluno)=(12) is still referenced from table "orientador".
+2019-08-24 20:07:00 -03 STATEMENT:  DELETE FROM public.aluno WHERE id_aluno = '12'::integer
+2019-08-24 20:20:00 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:20:00 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:20:02 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:20:02 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:20:58 -03 ERROR:  insert or update on table "projeto" violates foreign key constraint "projeto_id_coord_fkey"
+2019-08-24 20:20:58 -03 DETAIL:  Key (id_coord)=(17) is not present in table "coordenador".
+2019-08-24 20:20:58 -03 STATEMENT:   insert into projeto (nome_projeto) values ($1) 
+2019-08-24 20:23:15 -03 ERROR:  relation "coordenador_id_proj_seq" does not exist
+2019-08-24 20:23:15 -03 STATEMENT:  ALTER SEQUENCE coordenador_id_proj_seq RESTART WITH 1
+	
+2019-08-24 20:24:58 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 20:25:52 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:25:52 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:25:56 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:25:56 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:26:31 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 20:27:05 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:27:05 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:28:01 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 20:28:25 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:28:25 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:36:30 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:36:30 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:36:37 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:36:37 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:37:42 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 20:37:42 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-24 20:53:24 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:53:24 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:54:57 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:54:57 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 20:56:49 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 20:56:49 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  
+2019-08-24 21:01:28 -03 ERROR:  column reference "id_aluno" is ambiguous at character 10
+2019-08-24 21:01:28 -03 STATEMENT:   select  id_aluno, nome_aluno, coord.nome_coord, proj.nome_projeto, sit.estado from orientador ori join coordenador coord on coord.id_coord = ori.id_coord join aluno al 
+	on al.id_aluno = ori.id_aluno join projeto proj on coord.id_coord = proj.id_proj join situacao sit on sit.id_sit = proj.id_sit  

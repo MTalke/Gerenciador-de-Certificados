@@ -1,0 +1,6 @@
+2019-08-12 10:45:00 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-08-12 10:45:11 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-08-12 10:45:13 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-08-12 10:45:23 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-08-12 20:50:17 -03 WARNING:  worker took too long to start; canceled
+2019-08-12 20:51:00 -03 WARNING:  autovacuum worker started without a worker entry

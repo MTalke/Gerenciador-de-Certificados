@@ -1,0 +1,30 @@
+2019-08-07 11:30:45 -03 ERROR:  missing FROM-clause entry for table "al" at character 20
+2019-08-07 11:30:45 -03 STATEMENT:  select coord.nome, al.nome from orientacao ori 
+	join cordenador coord 
+	on coord.id_cord = ori.id_cord 
+2019-08-07 11:52:55 -03 ERROR:  missing FROM-clause entry for table "coor" at character 196
+2019-08-07 11:52:55 -03 STATEMENT:  select  al.nome, coord.id_cord, proj.nome_projeto from orientacao ori 
+	join cordenador coord on coord.id_cord = ori.id_cord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj on coor.id_cord = proj.id_projeto
+2019-08-07 11:53:08 -03 ERROR:  missing FROM-clause entry for table "coor" at character 198
+2019-08-07 11:53:08 -03 STATEMENT:  select  al.nome, coord.id_cord, proj.nome_projeto from orientacao ori 
+	join cordenador coord on coord.id_cord = ori.id_cord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coor.id_cord = proj.id_projeto
+2019-08-07 11:53:31 -03 ERROR:  column al.nome does not exist at character 9
+2019-08-07 11:53:31 -03 STATEMENT:  select  al.nome, coord.id_cord, proj.nome_projeto from orientacao ori 
+	join cordenador coord 
+	on coord.id_cord = ori.id_cord 
+	join aluno al
+	on al.id_aluno = ori.id_aluno 
+	join projeto proj 
+	on coord.id_cord = proj.id_projeto
+2019-08-07 11:59:17 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-08-07 11:59:19 -03 LOG:  interrompendo quaisquer transações ativas
+2019-08-07 11:59:20 -03 LOG:  autovacuum launcher shutting down
+2019-08-07 11:59:23 -03 LOG:  shutting down
+2019-08-07 11:59:24 -03 LOG:  database system is shut down

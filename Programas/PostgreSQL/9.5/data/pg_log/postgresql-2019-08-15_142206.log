@@ -1,0 +1,11 @@
+2019-08-15 14:22:06 -03 LOG:  database system was shut down at 2019-08-15 12:01:22 -03
+2019-08-15 14:22:06 -03 FATAL:  the database system is starting up
+2019-08-15 14:22:06 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-08-15 14:22:06 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-08-15 14:22:06 -03 LOG:  autovacuum launcher started
+2019-08-15 15:19:02 -03 ERROR:  column "nome" does not exist at character 17
+2019-08-15 15:19:02 -03 STATEMENT:  select id_aluno,nome from aluno where nome_aluno like'%janaina%'
+2019-08-15 15:37:15 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-08-15 20:33:43 -03 ERROR:  syntax error at or near "," at character 17
+2019-08-15 20:33:43 -03 STATEMENT:   update id_aluno,nome_aluno from aluno where nome_aluno = 'fred' 
+2019-08-15 20:33:50 -03 LOG:  could not receive data from client: unrecognized winsock error 10054

@@ -1,0 +1,270 @@
+2019-01-22 12:26:41 -03 FATAL:  the database system is starting up
+2019-01-22 12:26:41 -03 LOG:  database system was shut down at 2019-01-22 10:48:11 -03
+2019-01-22 12:26:41 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-01-22 12:26:41 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-01-22 12:26:41 -03 LOG:  autovacuum launcher started
+2019-01-22 21:09:42 -03 ERROR:  syntax error at or near ")" at character 45
+2019-01-22 21:09:42 -03 STATEMENT:  insert into categoria(
+	
+	
+		descricao,
+	
+		)
+		values(
+		'cerveja'
+	)
+2019-01-22 21:10:19 -03 ERROR:  unrecognized configuration parameter "tables"
+2019-01-22 21:10:19 -03 STATEMENT:  show tables 
+2019-01-22 21:10:37 -03 ERROR:  syntax error at or near "categoria" at character 13
+2019-01-22 21:10:37 -03 STATEMENT:  show tables categoria
+2019-01-22 21:10:43 -03 ERROR:  syntax error at or near "table" at character 6
+2019-01-22 21:10:43 -03 STATEMENT:  show table categoria
+2019-01-22 21:11:09 -03 ERROR:  syntax error at or near "*" at character 5
+2019-01-22 21:11:09 -03 STATEMENT:  show* tables;
+2019-01-22 21:11:17 -03 ERROR:  unrecognized configuration parameter "tables"
+2019-01-22 21:11:17 -03 STATEMENT:  show tables;
+2019-01-22 21:11:28 -03 ERROR:  syntax error at or near "table" at character 6
+2019-01-22 21:11:28 -03 STATEMENT:  show table;
+2019-01-22 21:18:56 -03 ERROR:  syntax error at or near "(" at character 80
+2019-01-22 21:18:56 -03 STATEMENT:  create type endereco as(
+	
+		rua varchar(40),
+		numero integer,
+		bairrovarchar(30),
+		cep varchar(10),
+		cidade varchar(40),
+		estado char(2),
+		pais varchar(40)
+	
+	);
+2019-01-22 21:20:21 -03 ERROR:  type "endereco" already exists
+2019-01-22 21:20:21 -03 STATEMENT:  
+	CREATE TYPE ENDERECO AS (
+	rua VARCHAR(40),
+	numero INTEGER,
+	bairro VARCHAR(40),
+	cep VARCHAR(10),
+	cidade VARCHAR(40),
+	estado CHAR(2),
+	pais VARCHAR(40)
+	);
+2019-01-22 21:23:11 -03 ERROR:  type "nome" does not exist
+2019-01-22 21:23:11 -03 STATEMENT:  
+	create type cliente as(
+	nome_cliente nome,
+	localizacao endereco,
+	tel telefone
+	);
+2019-01-22 21:23:44 -03 ERROR:  type "nome" does not exist
+2019-01-22 21:23:44 -03 STATEMENT:  
+	create type cliente as(
+	nome_cliente Nome,
+	localizacao endereco,
+	tel telefone
+	);
+2019-01-22 21:23:50 -03 ERROR:  type "nome" does not exist
+2019-01-22 21:23:50 -03 STATEMENT:  
+	create type cliente as(
+	nome_cliente NOME,
+	localizacao endereco,
+	tel telefone
+	);
+2019-01-22 21:32:22 -03 ERROR:  syntax error at or near "cliente" at character 52
+2019-01-22 21:32:22 -03 STATEMENT:  insert into tabela_cliente(
+	client.endereco.rua
+	 cliente.endereco.numero,
+	                         cliente.endereco.bairro,
+	                         cliente.endereco.cep,
+	                         cliente.endereco.cidade,
+	                         cliente.endereco.estado,
+	                         cliente.endereco.pais,
+	                         cliente.telefone.ddi,
+	                         cliente.telefone.ddd,
+	                         cliente.telefone.telefone,
+	                         fg_ativo) VALUES
+	(
+	 'Minha Rua',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:32:49 -03 ERROR:  column "cliente" of relation "tabela_cliente" does not exist at character 67
+2019-01-22 21:32:49 -03 STATEMENT:  insert into tabela_cliente(
+				 client.endereco.rua,
+			         cliente.endereco.numero,
+	                         cliente.endereco.bairro,
+	                         cliente.endereco.cep,
+	                         cliente.endereco.cidade,
+	                         cliente.endereco.estado,
+	                         cliente.endereco.pais,
+	                         cliente.telefone.ddi,
+	                         cliente.telefone.ddd,
+	                         cliente.telefone.telefone,
+	                         fg_ativo) VALUES
+	(
+	 'Minha Rua',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:33:48 -03 ERROR:  column "cliente" of relation "tabela_cliente" does not exist at character 314
+2019-01-22 21:33:48 -03 STATEMENT:  insert into tabela_cliente(
+				 client.endereco.rua,
+			         client.endereco.numero,
+	                         client.endereco.bairro,
+	                         client.endereco.cep,
+	                         client.endereco.cidade,
+	                         client.endereco.estado,
+	                         cliente.endereco.pais,
+	                         cliente.telefone.ddi,
+	                         cliente.telefone.ddd,
+	                         cliente.telefone.telefone,
+	                         fg_ativo) VALUES
+	(
+	 'Minha Rua',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:34:05 -03 ERROR:  column "fg_ativo" of relation "tabela_cliente" does not exist at character 508
+2019-01-22 21:34:05 -03 STATEMENT:  insert into tabela_cliente(
+				 client.endereco.rua,
+			         client.endereco.numero,
+	                         client.endereco.bairro,
+	                         client.endereco.cep,
+	                         client.endereco.cidade,
+	                         client.endereco.estado,
+	                         client.endereco.pais,
+	                         client.telefone.ddi,
+	                         client.telefone.ddd,
+	                         client.telefone.telefone,
+	                         fg_ativo) VALUES
+	(
+	 'Minha Rua',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:34:16 -03 ERROR:  cannot assign to field "endereco" of column "client" because there is no such column in data type cliente at character 34
+2019-01-22 21:34:16 -03 STATEMENT:  insert into tabela_cliente(
+				 client.endereco.rua,
+			         client.endereco.numero,
+	                         client.endereco.bairro,
+	                         client.endereco.cep,
+	                         client.endereco.cidade,
+	                         client.endereco.estado,
+	                         client.endereco.pais,
+	                         client.telefone.ddi,
+	                         client.telefone.ddd,
+	                         client.telefone.telefone,
+	                         ativo) VALUES
+	(
+	 'Minha Rua',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:38:02 -03 ERROR:  cannot assign to field "endereco" of column "client" because there is no such column in data type cliente at character 34
+2019-01-22 21:38:02 -03 STATEMENT:  insert into tabela_cliente(
+				 client.ENDERECO.rua,
+			         client.endereco.numero,
+	                         client.endereco.bairro,
+	                         client.endereco.cep,
+	                         client.endereco.cidade,
+	                         client.endereco.estado,
+	                         client.endereco.pais,
+	                         client.telefone.ddi,
+	                         client.telefone.ddd,
+	                         client.telefone.telefone,
+	                         ativo) VALUES
+	(
+	 'Minha Rua',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:42:38 -03 ERROR:  cannot assign to field "endereco" of column "client" because there is no such column in data type cliente at character 34
+2019-01-22 21:42:38 -03 STATEMENT:  insert into tabela_cliente(
+				 client.endereco.rua,
+			         client.endereco.numero,
+	                         client.endereco.bairro,
+	                         client.endereco.cep,
+	                         client.endereco.cidade,
+	                         client.endereco.estado,
+	                         client.endereco.pais,
+	                         client.telefone.ddi,
+	                         client.telefone.ddd,
+	                         client.telefone.telefone,
+	                         ativo) VALUES
+	(
+	 'Minha',
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:43:19 -03 ERROR:  cannot assign to field "endereco" of column "client" because there is no such column in data type cliente at character 46
+2019-01-22 21:43:19 -03 STATEMENT:  insert into tabela_cliente(
+				
+			         client.endereco.numero,
+	                         client.endereco.bairro,
+	                         client.endereco.cep,
+	                         client.endereco.cidade,
+	                         client.endereco.estado,
+	                         client.endereco.pais,
+	                         client.telefone.ddi,
+	                         client.telefone.ddd,
+	                         client.telefone.telefone,
+	                         ativo) VALUES
+	(
+	
+	100,
+	'Meu Bairro',
+	'13700-000',
+	'Minha cidade',
+	 'SP', 'Brasil',
+	 '55',
+	 '19',
+	 '0000-0000',
+	1);
+2019-01-22 21:44:00 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-01-22 21:44:00 -03 LOG:  interrompendo quaisquer transações ativas
+2019-01-22 21:44:00 -03 LOG:  autovacuum launcher shutting down
+2019-01-22 21:44:00 -03 ERROR:  canceling statement due to user request
+2019-01-22 21:44:00 -03 LOG:  autovacuum launcher shutting down
+2019-01-22 21:44:00 -03 LOG:  shutting down
+2019-01-22 21:44:00 -03 LOG:  database system is shut down

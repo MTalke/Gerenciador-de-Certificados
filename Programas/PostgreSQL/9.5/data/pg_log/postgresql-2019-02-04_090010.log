@@ -1,0 +1,27 @@
+2019-02-04 09:00:11 -03 FATAL:  the database system is starting up
+2019-02-04 09:00:11 -03 LOG:  database system was shut down at 2019-02-01 10:40:57 -03
+2019-02-04 09:00:11 -03 LOG:  MultiXact member wraparound protections are now enabled
+2019-02-04 09:00:11 -03 LOG:  sistema de banco de dados está pronto para aceitar conexões
+2019-02-04 09:00:11 -03 LOG:  autovacuum launcher started
+2019-02-04 09:07:22 -03 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-02-04 10:50:42 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 10:51:13 -03 ERROR:  null value in column "nome" violates not-null constraint
+2019-02-04 10:51:13 -03 DETAIL:  Failing row contains (2, null, nenhuma, 2134556).
+2019-02-04 10:51:13 -03 STATEMENT:   insert into medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-02-04 10:52:13 -03 ERROR:  null value in column "nome" violates not-null constraint
+2019-02-04 10:52:13 -03 DETAIL:  Failing row contains (3, null, urologista, 123).
+2019-02-04 10:52:13 -03 STATEMENT:   insert into medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-02-04 10:52:23 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 10:55:34 -03 ERROR:  null value in column "nome" violates not-null constraint
+2019-02-04 10:55:34 -03 DETAIL:  Failing row contains (4, null, urologista, 324).
+2019-02-04 10:55:34 -03 STATEMENT:   insert into medicos (nome,especialidade,crm) values ($1,$2,$3) 
+2019-02-04 10:56:41 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 10:59:41 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 11:03:17 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 11:06:39 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 11:11:18 -03 LOG:  could not receive data from client: unrecognized winsock error 10054
+2019-02-04 11:15:54 -03 LOG:  pedido de desligamento rápido foi recebido
+2019-02-04 11:15:55 -03 LOG:  interrompendo quaisquer transações ativas
+2019-02-04 11:15:55 -03 LOG:  autovacuum launcher shutting down
+2019-02-04 11:15:57 -03 LOG:  shutting down
+2019-02-04 11:15:57 -03 LOG:  database system is shut down
